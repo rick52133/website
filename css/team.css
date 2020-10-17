@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 設定賽程表 */
+.sch{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+}
+.sch .sch_inner{
+    width: calc(100% - 60px);
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.item{
+    min-width: 160px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 5px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+.item-top-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.logo_and_name{
+    display: flex;
+    align-items: center;
+}
+.logo_and_name img{
+    margin: 0 10px;
+}
+.item-top-con img{
+    width: 25px;
+    height: 25px;
+}
+.item-buttom{
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+.sch .leff_but,.sch .right_but{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+}
+.sch .leff_but button,.sch .right_but button{
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700px;
+}
+.sch .leff_but button,.sch .right_but button:hover{
+    color: red;
+}
+/* 設定導覽列 */
+.nav{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d428a;
+    background-color: black;
+}
+.nav .nav_inner{
+    /* border: 1px solid white; */
+    height: 60px;
+}
+
+.nav .nav_inner a{
+    /* border: 1px solid wheat; */
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;
+}
+.nav_inner:nth-child(4) a{
+    color: #e51937;
+}
+.nav .nav_inner a:hover{
+    color: #e51937;
+}
+.nav .logo{
+    /* border: 1px solid white; */
+    width: 150px;
+    height: 60px;
+    position: relative;
+}
+.nav .logo img{
+    width: 100%;
+    position: absolute;
+    top: -40%;
+    z-index: 3;
+}
+
+/* 標題 */
+.teams_title{
+    width: 80%;
+    min-width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    text-shadow: 10px 13px 29px #1d428a;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-image: url(../picture/teams/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* 隊伍LOGO */
+.main{
+    width: 100%;
+    min-width: 1200px;
+    padding-bottom: 10px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.main ul{
+    display: flex;
+    max-width: 911px;
+    /* min-width: 911px; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.main li{
+    /* border: 1px solid black; */
+    list-style: none;
+    width: 100%;
+    padding-bottom: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.li_2,.li_6{
+    background-image: url(../picture/teams/back.png);
+}
+.li_1,.li_5{
+    background-image: url(../picture/teams/back2.png);
+}
+.li_4,.li_8{
+    background-image: url(../picture/teams/back3.png);
+}
+.li_3,.li_7{
+    background-image: url(../picture/teams/back4.png);
+}
+.main a{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 0 30px;
+    /* display: inline-block;
+    text-align: center;
+    height: 302px; */
+}
+.main .team_logo{
+    max-width: 412.5px;
+    max-height: 300px;
+    min-width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.main .left_a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    clip-path: polygon(0 0,67% 0,100% 100%,33% 100%);
+    left: -50%;
+    top: -70%;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s;
+}
+.main .left_a:hover::before{
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+.main .right_a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    clip-path: polygon(33% 0,100% 0,67% 100%,0 100%);
+    right: -50%;
+    top: -70%;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s;
+}
+.main .right_a:hover::before{
+    right: 0;
+    top: 0;
+    opacity: 1;
+}
+.left_explore{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    left: 100%;
+    top: 120%;
+    color: red;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+.right_explore{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    right: 100%;
+    top: 120%;
+    color: red;
+    opacity: 0;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+.explore_line{
+    width: 70px;
+    margin-right: 10px;
+    height: 3px;
+    display: inline-block;
+    background-color: red;
+    vertical-align: middle;
+}
+.main a:hover .left_explore{
+    left: 100%;
+    top: 100%;
+    transform: translateX(-150%) translateY(100%);
+    opacity: 1;
+}
+.main a:hover .right_explore{
+    right: 100%;
+    top: 100%;
+    transform: translateX(150%) translateY(100%);
+    opacity: 1;
+}
+.team_name{
+    width: 50%;
+    height: 100%;
+}
+.team_name h1{
+    font-size: 50px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #0B153C;
+    color: white;
+    text-shadow: -9px 8px 3px black;
+    font-weight: bold;
+}
+.right_team_name h1{
+    left: 25%;
+    transform: translateY(-50%) translateX(-25%);
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    min-width: 1200px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_inner{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.footer_top{
+    display: flex;
+    width: 300px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_top a{
+    width: 30px;
+    height: 30px;
+}
+.footer_top img{
+    width: 100%;
+    height: 100%;
+}
+.footer_bot{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}

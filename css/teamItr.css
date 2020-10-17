@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+}
+/* 設定賽程表 */
+.sch{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+}
+.sch .sch_inner{
+    width: calc(100% - 60px);
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.item{
+    min-width: 160px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 5px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+.item-top-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.logo_and_name{
+    display: flex;
+    align-items: center;
+}
+.logo_and_name img{
+    margin: 0 10px;
+}
+.item-top-con img{
+    width: 25px;
+    height: 25px;
+}
+.item-buttom{
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+.sch .leff_but,.sch .right_but{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+}
+.sch .leff_but button,.sch .right_but button{
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700px;
+}
+.sch .leff_but button,.sch .right_but button:hover{
+    color: red;
+}
+
+
+/* 設定導覽列 */
+.nav{
+    /* border: 1px solid black; */
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d428a;
+    background-color: black;
+}
+.nav .nav_inner{
+    /* border: 1px solid white; */
+    height: 60px;
+}
+.nav .nav_inner a{
+    /* border: 1px solid wheat; */
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;
+}
+.nav_inner:nth-child(4) a{
+    color: #e51937;
+}
+.nav .nav_inner a:hover{
+    color: #e51937;
+}
+.nav .logo{
+    /* border: 1px solid white; */
+    width: 150px;
+    height: 60px;
+    position: relative;
+}
+.nav .logo img{
+    width: 100%;
+    position: absolute;
+    top: -40%;
+    z-index: 999;
+}
+
+/* 標題 */
+.teamItr_title{
+    width: 80%;
+    min-width: 960px;
+    height: 255px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-image: url(../picture/team_background/Aliens.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.title_logo{
+    width: 16%;
+    margin-left: 30px;
+}
+.title_team_name{
+    color: white;
+    font-size: 76px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+/* 球隊數據 */
+.team_stat{
+    width: 80%;
+    min-width: 960px;
+    height: 96px;
+    margin: 0 auto;
+    background-color: #0B153C;
+    border-top: 2px solid #66737C;
+    color: white;
+    display: flex;
+}
+.pg_stat{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.stat_title{
+    font-size: 16px;
+    line-height: 10px;
+}
+.pg_stat span{
+    border-right: 1px solid #66737C;
+}
+.streak span{
+    border: none;
+}
+.games_played{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+}
+.games_played_inner{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-left: 1px solid #66737C;
+    border-right: 1px solid #66737C;
+}
+.games_played_inner:nth-child(2){
+    border-top: 1px solid #66737C;
+    border-bottom: 1px solid #66737C;
+}
+.winloss{
+    width: 10%;
+    /* height: 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.winloss .box{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #66737C;
+}
+.winloss_icon{
+    width: 34px;
+    height: 32px;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
+}
+.win_num,.lose_num{
+    font-size: 30px;
+}
+.win .winloss_icon{
+    color: green;
+    font-size: 22px;
+}
+.loss .winloss_icon{
+    color: red;
+    font-size: 22px;
+}
+.pct{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pct_title{
+    font-size: 22px;
+    margin-right: 16px;
+    width: 55px;
+    height: 32px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 32px;
+}
+.pct_num{
+    font-size: 30px;
+}
+
+/* 隊伍賽程 */
+.team_scoreboard{
+    width: 70%;
+    min-width: 840px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.team_scoreboard_inner{
+    width: 49%;
+    border: 1px solid #d7dadc;
+    /* display: inline-block; */
+    /* margin: 10px; */
+}
+.gametime_box{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    background-color: #BEBEBE;
+}
+.gametime_title{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.score_box{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+}
+.score_team{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.score_teamlogo{
+    width: 90px;
+    height: 90px;
+}
+.score_box .score{
+    font-size: 40px;
+}
+.score_title_end{
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+.nextgame .right_team{
+    display: flex;
+    justify-content: flex-end;
+}
+.score_title_time{
+    font-weight: bold;
+}
+.score_title_time .game_time{
+    font-size: 40px;
+}
+.nextgame .score_team{
+    width: 20%;
+}
+
+/* 隊伍介紹 */
+.main{
+    width: 80%;
+    min-width: 960px;
+    margin: 15px auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.teamItr_content{
+    width: 43%;
+    padding: 36px;
+    background-color: white;
+    margin-right: 20px;
+    line-height: 30px;
+
+}
+.teamItr_content_inner{
+    position: sticky;
+    top: 36px;
+}
+.teamItr_content h1{
+    margin-bottom: 21px;
+}
+.teamItr_player_list{
+    width: 70%;
+    /* background-color: white; */
+    padding: 15px;
+}
+.teamItr_player_list_inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.player_photo_box{
+    width: 40%;
+    padding: 15px;
+    position: relative;
+    margin-right: 35px;
+}
+.hidden{
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 0,67% 0,100% 100%,33% 100%);
+}
+.player_photo{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    top: 5px;
+}
+.polygon{
+    height: 85%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #d7dadc;
+    clip-path: polygon(0 0,67% 0,100% 100%,33% 100%);
+}
+.coach_polygon{
+    background-color: white;
+}
+.playerItr h3{
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+.playerItr .coach{
+    font-size: 20px;
+    color: red;
+}
+.playerItr h4{
+    font-size: 20px;
+}
+.more{
+    margin-top: 15px;
+}
+.more a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    min-width: 1200px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_inner{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.footer_top{
+    display: flex;
+    width: 300px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_top a{
+    width: 30px;
+    height: 30px;
+}
+.footer_top img{
+    width: 100%;
+    height: 100%;
+}
+.footer_bot{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}

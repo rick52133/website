@@ -1,0 +1,186 @@
+/* 設定賽程表 */
+.sch{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* min-width: 1200px; */
+    margin: 0 auto;
+    height: 90px;
+    display: flex;
+}
+.sch .sch_inner{
+    width: calc(100% - 60px);
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.item{
+    min-width: 160px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-top: 5px;
+    border-right: 1px solid rgba(0,0,0,0.4);
+}
+.item-top-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.logo_and_name{
+    display: flex;
+    align-items: center;
+}
+.logo_and_name img{
+    margin: 0 10px;
+}
+.item-top-con img{
+    width: 25px;
+    height: 25px;
+}
+.item-buttom{
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+.sch .leff_but,.sch .right_but{
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+}
+.sch .leff_but button,.sch .right_but button{
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700px;
+
+}
+.sch .leff_but button,.sch .right_but button:hover{
+    color: red;
+}
+
+/* 賽程RWD */
+@media screen and (max-width:767px){
+    .sch{
+        display: none;
+    }
+}
+
+/* 設定導覽列 */
+.nav{
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 0 auto;
+    /* height: 60px; */
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #1d428a; */
+    background-color: black;
+}
+/* .nav .nav_inner{
+    height: 60px;
+} */
+.nav .nav_inner a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    line-height: 60px;
+}
+.nav .nav_inner a:hover{
+    color: #e51937;
+}
+.nav .logo{
+    width: 150px;
+    height: 60px;
+    position: relative;
+    display: inline-block;
+}
+.nav .logo img{
+    width: 100%;
+    position: absolute;
+    top: -40%;
+    z-index: 4;
+}
+/* .back_pic{
+    width: 100%;
+    height: 800px;
+    background-image: url(../picture/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+.mob_sch_but{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    display: none;
+}
+.hamburger{
+    display: none;
+    /* border: 1px solid white; */
+    z-index: 6;
+}
+.nav_mob{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+    margin-top: -48px;
+}
+.nav_mob_inner a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.nav_mob_inner{
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* 導覽列RWD */
+@media screen and (max-width:767px){
+    .mob_sch_but{
+        display: inline-block;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .nav_inner{
+        display: none;
+    }
+    .nav .logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px; 
+        height: 36px;
+    }
+    .nav .logo img{
+        top: -21%;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:768px){
+    .nav_mob{
+        display: none !important;
+    }
+}
