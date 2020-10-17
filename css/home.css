@@ -7,10 +7,6 @@
 /* 影片 */
 .video{
     width: 100%;
-    min-width: 1200px;
-    margin-top: -3px;
-    /* border: 1px solid blue; */
-    /* height: 800px; */
     margin-top: -3px;
 }
 video{
@@ -23,21 +19,33 @@ video{
     width: 100%;
     /* border: 1px solid red; */
     position: relative;
-    min-width: 1200px;
+}
+.news_title{
+    text-align: center;
+    padding: 20px 0;
+}
+.news_title h2{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px){
+    .news_title{
+        padding: 5px 0;
+    }
+    .news_title h2{
+        font-size: 20px;
+    }
 }
 .home_news{
     /* border: 1px solid rebeccapurple; */
     width: 90%;
-    min-width: 1200px;
     margin: 0 auto;
-    margin-top: 20px;
     display: flex;
     font-size: 0;
 }
 .left_news{
     /* border: 1px solid red; */
     width: 22%;
-    min-width: 294px;
     /* height: 100%; */
     position: relative;
 }
@@ -123,7 +131,9 @@ video{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 30px 0;
+    padding-top: 20px;
+}
+.star_title h2{
     font-size: 30px;
 }
 .star_player_box{
