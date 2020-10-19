@@ -72,6 +72,7 @@
 
         .top_title {
             width: 100%;
+            overflow: hidden;
         }
 
         .top_title a {
@@ -240,9 +241,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="bot_items">
-
-                </div> -->
             </div>
             <div class="mid_pic slider-for">
                 <div>
@@ -280,8 +278,11 @@
                 slidesToScroll: 1,
                 asNavFor: '.slider-for',
                 dots: true,
-                centerMode: true,
-                focusOnSelect: true
+                fade: true,
+                // centerMode: true,
+                focusOnSelect: true,
+                arrows: false,
+                // autoplay: true,
             });
         });
     </script>
