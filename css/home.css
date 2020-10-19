@@ -122,7 +122,7 @@ video{
         padding-top: 20px;
     }
     .top_title p{
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 }
 @media screen and (max-width:576px){
