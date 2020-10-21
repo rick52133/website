@@ -12,6 +12,8 @@
 video{
     width: 100%;
     /* min-height: 100%; */
+    height: 100vh;
+    object-fit: cover;
 }
 
 /* 最新消息 */
@@ -483,6 +485,7 @@ video{
     .about_inner h1{
         line-height: 39px;
     }
+
 }
 
 

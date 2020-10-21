@@ -17,12 +17,12 @@
 <body>
 
     <div class="sch">
-        <div class="right_but">
+        <div class="move_but left_but">
             <button>&lt;</button>
         </div>
 
         <section class="sch_inner">
-            <div class="item">
+            <div class="item first_item">
                 <div class="item-top-con">
                     <div class="logo_and_name">
                         <img src="../picture/scores/Aliens.png" alt="">
@@ -242,7 +242,7 @@
                 </div>
             </div>
 
-            <div class="item">
+            <div class="item last_item">
                 <div class="item-top-con">
                     <div class="logo_and_name">
                         <img src="../picture/scores/killer3s.png" alt="">
@@ -266,7 +266,7 @@
 
         </section>
 
-        <div class="right_but"><button>&gt;</button></div>
+        <div class="move_but right_but"><button>&gt;</button></div>
     </div>
 
     <div class="nav">
@@ -553,7 +553,7 @@
             </div>
         </div>
 
-        <div class="about_outer">
+        <div class=".about_outer">
             <div class="about">
                 <div class="img1"><img src="../picture/img3.jpg" alt=""></div>
                 <div class="about_inner">
@@ -595,6 +595,84 @@
                     $('.nav_mob').slideToggle().css('display', 'flex')
                 });
 
+                $(".mob_sch_but").on("click", function () {
+                    $(this).toggleClass("is-active");
+                    $('.sch').slideToggle().css('display', 'flex')
+                });
+
+            });
+            var isClick = true
+            $(function () {
+                window.onresize = function () {
+                    $('.item').css({
+                        right: 0
+                    })
+                    $(".left_but button").attr('disabled', true)
+                    $(".right_but button").attr('disabled', false)
+                }
+
+
+                //右側按鈕
+                $(".right_but button").on("click", function () {
+                    var width = $('.last_item').position().left //距離左邊按鈕的寬度
+                    var fullWidth = $('.sch_inner').width() //父元素寬度
+                    var right_margin = fullWidth - width//距離右邊按鈕的寬度
+
+                    if (isClick) {
+                        isClick = false;
+                        //定時器
+                        setTimeout(function () {
+                            isClick = true;
+                        }, 500);//0.5秒内不能重複點擊
+
+                        if (right_margin > 0 && right_margin < 150) {
+                            $('.item').css({
+                                right: '+=150px'
+                            })
+                            $(this).attr('disabled', true)
+                        } else if (right_margin < 150) {
+                            console.log('right', right_margin)
+                            $('.item').css({
+                                right: '+=150px'
+                            })
+                        } else {
+                            $(this).attr('disabled', true)
+                        }
+                        $(".left_but button").attr('disabled', false)
+                    }
+
+
+                });
+
+                //左側按鈕
+                $(".left_but button").attr('disabled', true)
+                $(".left_but button").on("click", function () {
+                    var left_margin = $('.first_item').position().left //距離左邊按鈕距離
+
+                    if (isClick) {
+                        isClick = false;
+                        //定時器
+                        setTimeout(function () {
+                            isClick = true;
+                        }, 500);//0.5秒内不能重複點擊
+
+                        if (left_margin < -150 && left_margin > -151) {
+                            $('.item').css({
+                                right: '-=150px'
+                            })
+                            $(this).attr('disabled', true)
+                            return
+                        }
+                        else if (left_margin < 0) {
+                            $('.item').css({
+                                right: '-=150px'
+                            })
+                        } else {
+                            $(this).attr('disabled', true)
+                        }
+                        $(".right_but button").attr('disabled', false)
+                    }
+                });
             });
 
             $(document).ready(function () {
