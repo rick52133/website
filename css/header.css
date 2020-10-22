@@ -183,4 +183,7 @@
     .nav_mob{
         display: none !important;
     }
+    .sch{
+        display: flex !important;
+    }
 }
