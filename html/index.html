@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../css/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -555,7 +556,9 @@
 
         <div class="about_outer">
             <div class="about">
-                <div class="img1"><img src="../picture/img3.jpg" alt=""></div>
+                <div class="img1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600"><img src="../picture/img3.jpg" alt="">
+                </div>
                 <div class="about_inner">
                     <h1>ABOUT US</h1>
                     <p>One of the world's fastest growing sports is 3-on-3 basketball.TheBig3 features former NBA stars,
@@ -563,7 +566,8 @@
                         also earned kudos for the hiring of women head coaches (Nancy Lieberman, Lisa Leslie) and a top
                         executive (Amy Trask) and also its approval of CBD for pain management.</p>
                 </div>
-                <div class="img2"><img src="../picture/img4.jpg" alt=""></div>
+                <div class="img2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                    data-aos-duration="600"><img src="../picture/img4.jpg" alt=""></div>
             </div>
         </div>
 
@@ -586,23 +590,25 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             $(function () {
-
                 // hamburger icon 的切換
                 $("button.hamburger").on("click", function () {
                     $(this).toggleClass("is-active");
                     $('.nav_mob').slideToggle().css('display', 'flex')
                 });
 
+                //賽事表切換
                 $(".mob_sch_but").on("click", function () {
                     $(this).toggleClass("is-active");
                     $('.sch').slideToggle().css('display', 'flex')
                 });
 
             });
+
             var isClick = true
-            $(function () {
+            $(function () {            //頁面寬度改變，重設賽式表距離
                 window.onresize = function () {
                     $('.item').css({
                         right: 0
@@ -675,7 +681,7 @@
                 });
             });
 
-            $(document).ready(function () {
+            $(document).ready(function () {  //輪播圖
                 $('.slider-for').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -695,6 +701,8 @@
                     autoplay: true,
                 });
             });
+
+            AOS.init();
         </script>
 </body>
 

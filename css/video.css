@@ -137,6 +137,7 @@ main{
 .left_aside_inner{
     position: sticky;
     top:0px;
+    overflow-y: auto;
 }
 .video_search_box{
     width: 100%;

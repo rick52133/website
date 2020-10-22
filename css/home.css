@@ -352,6 +352,10 @@ video{
     width: 100%;
     z-index: 2;
     position: relative;
+    /* #e51937 */
+}
+.player_photo_img:hover + span{
+    background-color: #e51937;
 }
 .player_photo .teamlogo{
     position: absolute;
@@ -401,7 +405,7 @@ video{
     background-image: url(../picture/What-We-Do-BG.png);
     background-size: cover;
     /* border: 1px solid black; */
-    /* background-position: center; */
+    overflow: hidden;
 }
 .about{
     width: 80%;
@@ -433,6 +437,7 @@ video{
    background-color: rgba(255,255,255,.8);
    left: 50%;
    top: 50%;
+   z-index: 3;
    transform: translateX(-50%) translateY(-50%);
 }
 .about_inner h1{
