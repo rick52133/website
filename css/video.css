@@ -5,140 +5,53 @@
 body{
     background-color: #ebebeb;
 }
-/* 設定賽程表 */
-.sch{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 90px;
-    display: flex;
-}
-.sch .sch_inner{
-    width: calc(100% - 60px);
-    background-color: white;
-    display: flex;
-    overflow: hidden;
-    /* border: 1px solid red; */
-}
-.item{
-    min-width: 160px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 10px;
-    padding-top: 5px;
-    border-right: 1px solid rgba(0,0,0,0.4);
-}
-.item-top-con{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-}
-.logo_and_name{
-    display: flex;
-    align-items: center;
-}
-.logo_and_name img{
-    margin: 0 10px;
-}
-.item-top-con img{
-    width: 25px;
-    height: 25px;
-}
-.item-buttom{
-    font-weight: bold;
-    color: rgba(0,0,0,0.4);
-    text-align: center;
-    padding-bottom: 5px;
-    
-}
-.sch .leff_but,.sch .right_but{
-    /* border: 1px solid blue; */
-    height: 100%;
-    width: 60px;
-    cursor: pointer;
-}
-.sch .leff_but button,.sch .right_but button{
-    border-style: none;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 700px;
-}
-.sch .leff_but button,.sch .right_but button:hover{
-    color: red;
-}
-
-/* 設定導覽列 */
-.nav{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    /* background-color: #1d428a; */
-    background-color: black;
-}
-.nav .nav_inner{
-    /* border: 1px solid white; */
-    height: 60px;
-}
-.nav .nav_inner a{
-    /* border: 1px solid wheat; */
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    line-height: 60px;
-}
-.nav_inner:nth-child(5) a{
-    color: #e51937;
-}
-.nav .nav_inner a:hover{
-    color: #e51937;
-}
-.nav .logo{
-    /* border: 1px solid white; */
-    width: 150px;
-    height: 60px;
-    position: relative;
-}
-.nav .logo img{
-    width: 100%;
-    position: absolute;
-    top: -40%;
-    z-index: 999;
-}
 
 /* 影片 */
 /* 左邊搜尋BAR */
 main{
     width: 100%;
-    /* margin-top: 20px; */
     display: flex;
-    min-width: 1200px;
-    
 }
 .left_aside{
-    /* width: 30%; */
     min-width: 435px;
-    /* background-color: white; */
+    width: 30%;
     background-color: rgb(34, 34, 34);
     border-top: 1px solid rgb(195, 195, 195);
     position: sticky;
     top:60px;
+    
 }
+
 .left_aside_inner{
     position: sticky;
     top:0px;
     overflow-y: auto;
 }
+.close_but{
+    margin-left: 32px;
+    display: none;
+    height: 40px; 
+    width: 40px;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.fox{
+    height: 3px;
+    display: inline-block;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+}
+.fox_top{
+    transform: rotate(45deg);
+}
+.fox_bot{
+    transform: rotate(-45deg);
+}
+
 .video_search_box{
     width: 100%;
     display: flex;
@@ -241,7 +154,7 @@ main{
 
 
 /* 右側主要影片 */
-section{
+.sec{
     padding-left: 20px;
     margin-top: 20PX;
     padding-bottom: 36px;
@@ -256,6 +169,7 @@ section{
 }
 .section_title_box h1{
     font-size: 20px;
+    text-align: center;
 }
 .video_box{
     width: 100%;
@@ -327,46 +241,88 @@ section{
     color: white;
 }
 
-/* footer */
-.footer{
-    width: 100%;
-    min-width: 1200px;
-    height: 120px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+@media screen and (max-width : 1200px){
+    .video_inner{
+        width: 50%;
+    }
 }
-.footer_inner{
-    width: 55%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid white; */
+@media screen and (max-width : 992px) and (min-width:769px){
+    .left_aside{
+        min-width: 350px;
+        width: 40%;
+    }
+    .sec{
+        width: 60%;
+    }
+    .tab_but:nth-child(4){
+       padding-top: 8px;
+    }
+    .tabs_inner{
+        min-height: 63.4px;
+    }
+    .video_inner{
+        width: 100%;
+    }
+    .section_title_inner{
+        margin-bottom: 0px;
+    }
 }
-.footer_top{
-    display: flex;
-    width: 300px;
-    height: 50%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.footer_top a{
-    width: 30px;
-    height: 30px;
-}
-.footer_top img{
-    width: 100%;
-    height: 100%;
-}
-.footer_bot{
-    height: 50%;
-    display: flex;
-    align-items: center;
+@media screen and (max-width:768px){
+    .nav{
+        z-index: 8;
+    }
+    .left_aside{
+        transform: translateX(-100%);
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        height: 100%;
+        transition: 1s all;
+    }
+    .-on{
+        transform: translateX(0%);   
+    }
+    .-on .left_aside_inner{
+        position: static;
+    }
+    .close_but{
+        display:inline-block ;
+    }
+ 
+    .sec{
+        width: 100%;
+        padding-left: 0;
+    }
+    .section_title_inner{
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+    .video_inner{
+        padding: 20px;
+        padding-left: 10px;
+    }
+    .video_inner:nth-child(2n - 1){
+        padding-left: 20px;
+        padding-right: 10px;
+    }
 }
 
+@media screen and (max-width:576px){
+    .video_inner{
+        width: 100%;
+        padding: 20px;
+    }
+    .video_inner:nth-child(2n - 1){
+        padding: 20px;
+    }
+}
+
+
+.footer{
+    margin-top: 0 !important;
+}
+.nav_inner:nth-child(4) a{
+    color: #e51937 !important;
+}
 
 
