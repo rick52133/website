@@ -17,9 +17,7 @@ main{
     width: 30%;
     background-color: rgb(34, 34, 34);
     border-top: 1px solid rgb(195, 195, 195);
-    position: sticky;
-    top:60px;
-    
+    /* overflow-y: auto; */
 }
 
 .left_aside_inner{
@@ -248,7 +246,7 @@ main{
 }
 @media screen and (max-width : 992px) and (min-width:769px){
     .left_aside{
-        min-width: 350px;
+        min-width: 375px;
         width: 40%;
     }
     .sec{
@@ -257,8 +255,8 @@ main{
     .tab_but:nth-child(4){
        padding-top: 8px;
     }
-    .tabs_inner{
-        min-height: 63.4px;
+    .tabs_box{
+        padding-right: 4px;
     }
     .video_inner{
         width: 100%;
@@ -278,6 +276,7 @@ main{
         z-index: 5;
         height: 100%;
         transition: 1s all;
+        overflow-y: auto;
     }
     .-on{
         transform: translateX(0%);   
@@ -315,8 +314,24 @@ main{
     .video_inner:nth-child(2n - 1){
         padding: 20px;
     }
+    .left_aside{
+        min-width: 375px;
+        width: 40%;
+    }
+    .tab_but:nth-child(4){
+        padding-top: 8px;
+     }
+     .tabs_box{
+        padding-right: 4px;
+    }
 }
-
+@media screen and (max-width:320px){
+    .left_aside{
+        min-width: 320px;
+        height: 100vh;
+        
+    }
+}
 
 .footer{
     margin-top: 0 !important;

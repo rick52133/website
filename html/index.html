@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../css/home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +43,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>4TH 3:12</p>
                 </div>
             </div>
 
@@ -63,7 +65,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>4TH 3:12</p>
+                    <p>1ST 8:21</p>
                 </div>
             </div>
 
@@ -107,7 +109,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>4TH 3:12</p>
+                    <p>SEP 15,2020</p>
                 </div>
             </div>
 
@@ -129,7 +131,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>SEP 15,2020</p>
                 </div>
             </div>
 
@@ -151,7 +153,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>SEP 14,2020</p>
                 </div>
             </div>
 
@@ -173,7 +175,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>SEP 12,2020</p>
                 </div>
             </div>
 
@@ -195,7 +197,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>4TH 3:12</p>
+                    <p>SEP 12,2020</p>
                 </div>
             </div>
 
@@ -217,7 +219,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>SEP 10,2020</p>
                 </div>
             </div>
 
@@ -239,7 +241,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>3RD 8:34</p>
+                    <p>SEP 9,2020</p>
                 </div>
             </div>
 
@@ -261,7 +263,7 @@
                 </div>
 
                 <div class="item-buttom">
-                    <p>FINAL</p>
+                    <p>SEP 9,2020</p>
                 </div>
 
 
@@ -373,8 +375,8 @@
             <div class="star_title">
                 <h2>ALL STAR PLAYER</h2>
             </div>
-            <div class="star_player_box">
-                <div class="img_hidden_box">
+            <div class="star_player_box ">
+                <div class="img_hidden_box" data-aos="zoom-in" data-aos-duration="1200">
                     <div class="star_player_inner">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>James Harden</span></div>
@@ -382,7 +384,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="img_hidden_box">
+                <div class="img_hidden_box" data-aos="zoom-in" data-aos-duration="1200">
                     <div class="star_player_inner">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Luka Doncic</span></div>
@@ -390,7 +392,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="img_hidden_box">
+                <div class="img_hidden_box" data-aos="zoom-in" data-aos-duration="1200">
                     <div class="star_player_inner">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Lebron James</span></div>
@@ -398,7 +400,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="img_hidden_box">
+                <div class="img_hidden_box" data-aos="zoom-in" data-aos-duration="1200">
                     <div class="star_player_inner">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Russel Westbrook</span></div>
@@ -557,7 +559,7 @@
         <div class="about_outer">
             <div class="about">
                 <div class="img1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600"><img src="../picture/img3.jpg" alt="">
+                    data-aos-duration="1000"><img src="../picture/img3.jpg" alt="">
                 </div>
                 <div class="about_inner">
                     <h1>ABOUT US</h1>
@@ -567,7 +569,7 @@
                         executive (Amy Trask) and also its approval of CBD for pain management.</p>
                 </div>
                 <div class="img2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="600"><img src="../picture/img4.jpg" alt=""></div>
+                    data-aos-duration="1000"><img src="../picture/img4.jpg" alt=""></div>
             </div>
         </div>
 
@@ -591,95 +593,9 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../js/navSch.js"></script>
         <script>
-            $(function () {
-                // hamburger icon 的切換
-                $("button.hamburger").on("click", function () {
-                    $(this).toggleClass("is-active");
-                    $('.nav_mob').slideToggle().css('display', 'flex')
-                });
 
-                //賽事表切換
-                $(".mob_sch_but").on("click", function () {
-                    $(this).toggleClass("is-active");
-                    $('.sch').slideToggle().css('display', 'flex')
-                });
-
-            });
-
-            var isClick = true
-            $(function () {            //頁面寬度改變，重設賽式表距離
-                window.onresize = function () {
-                    $('.item').css({
-                        right: 0
-                    })
-                    $(".left_but button").attr('disabled', true)
-                    $(".right_but button").attr('disabled', false)
-                }
-
-
-                //右側按鈕
-                $(".right_but button").on("click", function () {
-                    var width = $('.last_item').position().left //距離左邊按鈕的寬度
-                    var fullWidth = $('.sch_inner').width() //父元素寬度
-                    var right_margin = fullWidth - width//距離右邊按鈕的寬度
-
-                    if (isClick) {
-                        isClick = false;
-                        //定時器
-                        setTimeout(function () {
-                            isClick = true;
-                        }, 500);//0.5秒内不能重複點擊
-
-                        if (right_margin > 0 && right_margin < 150) {
-                            $('.item').css({
-                                right: '+=150px'
-                            })
-                            $(this).attr('disabled', true)
-                        } else if (right_margin < 150) {
-                            console.log('right', right_margin)
-                            $('.item').css({
-                                right: '+=150px'
-                            })
-                        } else {
-                            $(this).attr('disabled', true)
-                        }
-                        $(".left_but button").attr('disabled', false)
-                    }
-
-
-                });
-
-                //左側按鈕
-                $(".left_but button").attr('disabled', true)
-                $(".left_but button").on("click", function () {
-                    var left_margin = $('.first_item').position().left //距離左邊按鈕距離
-
-                    if (isClick) {
-                        isClick = false;
-                        //定時器
-                        setTimeout(function () {
-                            isClick = true;
-                        }, 500);//0.5秒内不能重複點擊
-
-                        if (left_margin < -150 && left_margin > -151) {
-                            $('.item').css({
-                                right: '-=150px'
-                            })
-                            $(this).attr('disabled', true)
-                            return
-                        }
-                        else if (left_margin < 0) {
-                            $('.item').css({
-                                right: '-=150px'
-                            })
-                        } else {
-                            $(this).attr('disabled', true)
-                        }
-                        $(".right_but button").attr('disabled', false)
-                    }
-                });
-            });
 
             $(document).ready(function () {  //輪播圖
                 $('.slider-for').slick({
@@ -701,6 +617,38 @@
                     autoplay: true,
                 });
             });
+
+            const animateCSS = (element, animation, prefix = 'animate__') =>
+                // We create a Promise and return it
+                new Promise((resolve, reject) => {
+                    const animationName = `${prefix}${animation}`;
+                    const node = document.querySelector(element);
+
+                    node.classList.add(`${prefix}animated`, animationName);
+
+                    // When the animation ends, we clean the classes and resolve the Promise
+                    function handleAnimationEnd() {
+                        node.classList.remove(`${prefix}animated`, animationName);
+                        node.removeEventListener('animationend', handleAnimationEnd);
+
+                        resolve('Animation ended');
+                    }
+
+                    node.addEventListener('animationend', handleAnimationEnd);
+                });
+
+            $(function () {
+
+                // 使用者點擊按鈕，會執行以下 function 裡的程式
+                $(".player_photo_img").on("mouseover", function () {
+
+                    // 1. 在 .the_block 這個元素上，加上 animate__bounce 這個 class(同時也會自動加上 animate__animated 這個 class)。
+                    // 2. 效果執行完後，會自動移除 animate__animated 和 animate__bounce 這兩個 class。
+                    animateCSS('.player_1', 'pulse');
+
+                });
+
+            })
 
             AOS.init();
         </script>

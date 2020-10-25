@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 /* 影片 */
 .video{
     width: 100%;
@@ -26,7 +26,8 @@ video{
     padding: 20px 0;
 }
 .news_title h2{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
 }
 @media screen and (max-width: 767px){
     .news_title{
@@ -190,7 +191,8 @@ video{
     padding-top: 20px;
 }
 .star_title h2{
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
 }
 .star_player_box{
     width: 100%;
@@ -272,8 +274,8 @@ video{
 }
 
 .stat_title span{
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;
     padding-left: 30px;
 }
 @media screen and (max-width:576px){
@@ -354,9 +356,9 @@ video{
     position: relative;
     /* #e51937 */
 }
-.player_photo_img:hover + span{
+/* .player_photo_img:hover + span{
     background-color: #e51937;
-}
+} */
 .player_photo .teamlogo{
     position: absolute;
     width: 30%;
@@ -441,7 +443,7 @@ video{
    transform: translateX(-50%) translateY(-50%);
 }
 .about_inner h1{
-    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
     font-size: 50px;
     text-align: center;
     text-shadow: 3px 3px 10px gray;

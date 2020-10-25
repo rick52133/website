@@ -3,122 +3,10 @@
     box-sizing: border-box;
 }
 
-/* 設定賽程表 */
-.sch{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 90px;
-    display: flex;
-}
-.sch .sch_inner{
-    width: calc(100% - 60px);
-    background-color: white;
-    display: flex;
-    overflow: hidden;
-    /* border: 1px solid red; */
-}
-.item{
-    min-width: 160px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 10px;
-    padding-top: 5px;
-    border-right: 1px solid rgba(0,0,0,0.4);
-}
-.item-top-con{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-}
-.logo_and_name{
-    display: flex;
-    align-items: center;
-}
-.logo_and_name img{
-    margin: 0 10px;
-}
-.item-top-con img{
-    width: 25px;
-    height: 25px;
-}
-.item-buttom{
-    font-weight: bold;
-    color: rgba(0,0,0,0.4);
-    text-align: center;
-    padding-bottom: 5px;
-    
-}
-.sch .leff_but,.sch .right_but{
-    /* border: 1px solid blue; */
-    height: 100%;
-    width: 60px;
-    cursor: pointer;
-}
-.sch .leff_but button,.sch .right_but button{
-    border-style: none;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 700px;
-}
-.sch .leff_but button,.sch .right_but button:hover{
-    color: red;
-}
-
-/* 設定導覽列 */
-.nav{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #1d428a;
-    background-color: black;
-}
-.nav .nav_inner{
-    /* border: 1px solid white; */
-    height: 60px;
-}
-.nav .nav_inner a{
-    /* border: 1px solid wheat; */
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    line-height: 60px;
-}
-.nav_inner:nth-child(2) a{
-    color: #e51937;
-}
-.nav .nav_inner a:hover{
-    color: #e51937;
-}
-.nav .logo{
-    /* border: 1px solid white; */
-    width: 150px;
-    height: 60px;
-    position: relative;
-}
-.nav .logo img{
-    width: 100%;
-    position: absolute;
-    top: -40%;
-    z-index: 999;
-}
-
 /* 選擇時間 */
 .box1{
     width: 100%;
     height: 200px;
-    min-width: 1200px;
     background-color: #ebebeb;
     margin-top: 50px;
     display: flex;
@@ -129,17 +17,17 @@
 .box1 h1{
     color: red;
     font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
 }
 .week{
     position: absolute;
     bottom: 0;
     transform: translateY(50%);
-    /* border: 1px solid black; */
     font-size: 20px;
 }
 .week ul{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0px;
 }
@@ -148,6 +36,7 @@
     text-align: center;
     border: 1px solid #ebebeb;
     background-color: white;
+    width: 107px;
 }
 .week li:first-child{
     background-color: #f6f6f6;
@@ -158,28 +47,70 @@
 .week a{
     display: inline-block;
     text-decoration: none;
-    padding: 20px 15px;
+    padding: 20px 10px;
     color: #959595;
+}
+@media screen and (max-width:1200px){
+    .week ul{
+        width: 749px;
+    }
+}
+@media screen and (max-width:992px){
+    .week ul{
+        width: 643px;
+    }
+}
+@media screen and (max-width:768px){
+    .week ul{
+        width: 523px;
+    }
+    .week li{
+        width: 87px;
+    }
+    .week a{
+        font-size: 13px;
+        padding: 10px 5px;
+    }
+    .box1{
+        height: 150px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:576px){
+    .week ul{
+        width: 350px;
+        transform: translateY(25%);
+    }
+    .week li{
+        width: 87px;
+    }
+    .week a{
+        font-size: 13px;
+        padding: 10px 5px;
+    }
+    .box1{
+        height: 130px;
+    }
+    .box1 h1{
+        font-size: 30px;
+    }
 }
 
 
 /* 對戰組合 */
 .box2{
     width: 80%;
-    min-width: 1200px;
-    /* border: 1px solid black; */
     margin: 0 auto;
     margin-top: 64px;
     display: flex;
 }
 .left_box2{
     width: 62%;
-    /* border: 1px solid blue; */
+    overflow: hidden;
 }
 .left_box2 .time{
     width: 100%;
     height: 50px;
-    /* border: 1px solid darkgoldenrod; */
     display: flex;
     background-color: #1a477b;
     color: white;
@@ -190,28 +121,30 @@
 .left_box2 .time .title{
     font-size: 20px;
     display: inline-block;
+    margin: 0 10px;
 }
 .left_box2 .time button{
     height: 50px;
-    width: 50px;
+    width: 40px;
     background-color: #1a477b;
-    border: none;
+    outline: none;
+    border-style: none;
     color: white;
     font-size: 30px;
     cursor: pointer;
 }
+.left_box2 .time button:hover{
+    background-color: #006bb6;
+}
 .matchup{
     width: 100%;
-    height: 321px;
     margin-bottom: 40px;
-    /* border: 1px solid darkmagenta; */
 }
 .matchup .detail_time{
     width: 100%;
     height: 55px;
     border: 1px solid #ebebeb;
     border-bottom: none;
-    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,7 +159,6 @@
 .team_matchup{
     width: 100%;
     border: 1px solid #ebebeb;
-    height: 271px;
 }
 .team_matchup .team{
     width: 88%;
@@ -235,11 +167,8 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    /* border: 1px solid #ebebeb; */
 }
 .team_matchup .team .logo_img{
-    /* max-width: 275px; 
-    max-height: 200px;   */
     width: 23%;
 }
 .box2 .lose{
@@ -257,15 +186,11 @@
 }
 .team_name_left,.team_name_right{
     width: 47%;
-    height: 100%;
-    /* border: 1px solid red; */
     background-color: #ebebeb;
 }
 .team_name_left span,.team_name_right span{
     width: 90%;
     display: inline-block;
-    /* border: 1px solid red; */
-    height: 100%;
     text-align: center;
     font-size: 30px;
     line-height: 60px;
@@ -280,6 +205,84 @@
 }
 .team_name_right{
     clip-path: polygon(0 0,100% 0,100% 100%,20% 100%);
+}
+@media screen and (max-width:1410px) and (min-width:993px){
+    .box2{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:993px){
+    .box2{
+        margin-top: 100px;
+        width: 95%;
+    }
+    .left_box2{
+        width: 58%;
+    }
+    .team_matchup .team{
+        height: 195px;
+    }
+}
+@media screen and (max-width:992px){
+    .box2{
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+    }
+    .left_box2{
+        width: 100%;
+    }
+    .team_matchup .team{
+        width: 92%;
+    }
+}
+@media screen and (max-width:768px){
+    .box2{
+        width: 90%;
+    }
+    .team_matchup .team .scores{
+        font-size: 40px;
+    }
+
+    .team_matchup .team .logo_img{
+        width: 30%;
+    }
+}
+@media screen and (max-width:576px){
+    .box2{
+        width: 95%;
+    }
+    .team_name_left span,.team_name_right span{
+        font-size: 20px;
+    }
+    .matchup .detail_time .final{
+        font-size: 25px;
+    }
+    .team_matchup .team .scores{
+        font-size: 30px;
+    }
+    .team_matchup .team{
+        width: 95%;
+        height: 160px;
+    }
+    .team_name{
+        height: 50px;
+    }
+    .team_name_left span, .team_name_right span{
+        line-height: 50px;
+    }
+    .team_name_left, .team_name_right{
+        width: 50%;
+    }
+    .matchup .detail_time{
+        height: 45px;
+    }
+    .left_box2 .time .title{
+        font-size: 16px;
+    }
+    .left_box2 .time button{
+        font-size: 25px;
+    }
 }
 
 
@@ -333,45 +336,41 @@ table{
     margin: 0 12px;
     vertical-align: middle;
 }
-
-/* footer */
-.footer{
-    margin-top: 50px;
-    width: 100%;
-    min-width: 1200px;
-    height: 120px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+@media screen and (max-width:1410px) and (min-width:993px){
+    .right_box2{
+        margin-left: 3%;
+        width: 35%;
+    }
+    .standing_team span{
+        margin-left: 0;
+    }
 }
-.footer_inner{
-    width: 55%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid white; */
+@media screen and (max-width:1200px) and (min-width:993px){
+    .right_box2{
+        width: 39%;
+    }
 }
-.footer_top{
-    display: flex;
-    width: 300px;
-    height: 50%;
-    justify-content: space-between;
-    align-items: flex-end;
+@media screen and (max-width:992px){
+    .right_box2{
+        width: 62%;
+    }
 }
-.footer_top a{
-    width: 30px;
-    height: 30px;
+@media screen and (max-width:768px){
+    .right_box2{
+        width: 83%;
+        margin-left: 0;
+    }
 }
-.footer_top img{
-    width: 100%;
-    height: 100%;
+@media screen and (max-width:576px){
+    .right_box2{
+        width: 100%;
+    }
+    .standing_team span{
+        margin-left: 0;
+    }
 }
-.footer_bot{
-    height: 50%;
-    display: flex;
-    align-items: center;
+@media screen and (max-width:374px){
+    .right_box2{
+        width: 102%;
+    }
 }

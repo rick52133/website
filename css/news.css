@@ -121,6 +121,7 @@ body{
     width: 80%;
     min-width: 960px;
     height: 448px;
+    font-family: 'Abril Fatface', cursive;
     /* border: 1px solid red; */
     margin: 0 auto;
     margin-bottom: 20px;
@@ -181,7 +182,6 @@ body{
     padding: 30px;
     background-color: rgb(22, 44, 92);
     line-height: 32px;
-    font-weight: bold;
     /* opacity: .8; */
     box-shadow: 14px 14px 20px -6px rgb(22, 44, 92);
     color: black;
@@ -196,10 +196,11 @@ h3{
     color: white;
     font-weight: bold;
     line-height: 40px;
+    font-family: 'Abril Fatface', cursive;
 }
 .text_box p{
-    text-shadow: 1px 1px 27px #f0f0f0;
-    font-weight: bold;
+    /* text-shadow: 1px 1px 27px #f0f0f0; */
+    color: white;
 }
 
 /* 更多消息 */
@@ -214,6 +215,7 @@ h4{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
 }
 .more_news_inner{
     display: flex;
