@@ -358,7 +358,7 @@
                 </section>
             </div>
 
-            <div class="matchup">
+            <div class="matchup" id="key01">
                 <section class="detail_time">
                     <p class="final">F I N A L</p>
                 </section>
@@ -383,9 +383,9 @@
         </div>
         <div class="right_box2">
             <div class="right_box2_title">Team Standings</div>
-            <div class="standing_table">
+            <div class="standing_table" id="key02">
                 <table>
-                    <tr class="odd">
+                    <tr>
                         <td class="standing_place standing_title">Place</td>
                         <td class="standing_team standing_title">Team</td>
                         <td class="standing_win standing_title">W</td>
@@ -400,7 +400,7 @@
                         <td class="standing_lose">1</td>
                     </tr>
 
-                    <tr class="odd">
+                    <tr>
                         <td class="standing_place">2</td>
                         <td class="standing_team text_left"><img class="teamlogo" src="../picture/scores/killer3s.png"
                                 alt=""><span>killer3s</span></td>
@@ -416,7 +416,7 @@
                         <td class="standing_lose">4</td>
                     </tr>
 
-                    <tr class="odd">
+                    <tr>
                         <td class="standing_place">4</td>
                         <td class="standing_team text_left"><img class="teamlogo" src="../picture/scores/Bivouac.png"
                                 alt=""><span>Bivouac</span></td>
@@ -432,7 +432,7 @@
                         <td class="standing_lose">5</td>
                     </tr>
 
-                    <tr class="odd">
+                    <tr>
                         <td class="standing_place">6</td>
                         <td class="standing_team text_left"><img class="teamlogo" src="../picture/scores/Aliens.png"
                                 alt=""><span>Aliens</span></td>
@@ -448,7 +448,7 @@
                         <td class="standing_lose">7</td>
                     </tr>
 
-                    <tr class="odd">
+                    <tr>
                         <td class="standing_place">8</td>
                         <td class="standing_team text_left"><img class="teamlogo" src="../picture/scores/ballhogs.png"
                                 alt=""><span>ballhogs</span></td>
@@ -478,8 +478,27 @@
     <script src="../jquery/jquery-3.4.1.min.js"></script>
     <script src="../js/navSch.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script>
         AOS.init();
+
+        // var controller = new ScrollMagic.Controller();
+
+        // var mv01 = new ScrollMagic.Scene({
+        //     triggerElement: '#key01',
+        //     offset: 0,// 改綠指標(單位px)
+        //     triggerHook: 0.5, // 改藍色指標  0~1
+        //     // duration: '50%' //單位是px or %  動畫執行的範圍
+
+
+        // }).addIndicators().on('enter', function () {
+        //     $('.matchup').addClass('animate__animated animate__bounce')
+        // }).addTo(controller);
+
+
     </script>
 </body>
 

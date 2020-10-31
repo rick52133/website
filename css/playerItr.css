@@ -265,9 +265,6 @@ main{
     font-size: 40px;
     padding: 70px 0;
 }
-.itr_text_box{
-    width: 100%;
-}
 .pic_itr{
     width: 100%;
     display: flex;
@@ -324,12 +321,12 @@ main{
 .pic_itr2 .left_itr .pic_itr_img{
     width: 100%;
     left: 10%;
-    clip-path: polygon(0 0,55% 0,100% 100%,0 100%);
+    clip-path: polygon(0 0,57% 0,100% 100%,0 100%);
 }
 .pic_itr2 .right_itr .pic_itr_img{
     width: 100%;
     right: 10%;
-    clip-path: polygon(0 0,100% 0,100% 100%,45% 100%);
+    clip-path: polygon(0 0,100% 0,100% 100%,43% 100%);
 }
 .pic_itr3 .left_itr .pic_itr_img{
     width: 100%;

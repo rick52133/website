@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebebeb;
+}
+
+
+/* 球員照片 */
+main{
+    width: 100%;
+    min-width: 1200px;
+}
+.pic_itr_box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.pic_itr_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 70px 0;
+}
+.pic_itr{
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+}
+.pic_itr_inner{
+    width: 50%;
+}
+.pic_itr_label{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 39px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    animation-delay: 1s;
+    visibility: hidden;
+    /* visibility: visible; */
+}
+@keyframes move{
+    0% {
+        transform: translateX(-38%) translateY(-45%);
+    }
+    100% {
+        transform: translateX(-38%) translateY(-39%);
+    }
+}
+.fireball{
+    position: absolute;
+    width: 60px;
+    z-index: -1;
+    transform: translateX(-38%) translateY(-39%);
+    animation-name: move;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+.pic_itr_img_box{
+    width: 100%;
+    position: relative;
+    /* min-height: 535px; */
+}
+.pic_itr_img{
+    position: relative;
+}
+.pic_itr1 .left_itr .pic_itr_img{
+    width: 100%;
+    left: 16%;
+    position: absolute;
+    top: 57.5px;
+    clip-path: polygon(0 0,100% 0,73% 100%,0 100%);
+}
+
+.pic_itr1 .right_itr .pic_itr_img{
+    width: 100%;
+    right: 16%;
+    bottom: 57.5px;
+    position: absolute;
+    clip-path: polygon(27% 0,100% 0,100% 100%,0 100%);
+}
+.pic_itr2 .left_itr .pic_itr_img{
+    width: 100%;
+    left: 20.5%;
+    top: 57.5px;
+    position: absolute;
+    clip-path: polygon(0 0,60% 0,100% 100%,0 100%);
+}
+.pic_itr2 .right_itr .pic_itr_img{
+    width: 100%;
+    right: 20.5%;
+    
+    bottom: 57.5px;
+    position: absolute;
+    clip-path: polygon(0 0,100% 0,100% 100%,40% 100%);
+}
+.pic_itr3 .left_itr .pic_itr_img{
+    width: 100%;
+    left: 18.25%;
+    position: absolute;
+    bottom: 57.5px;
+    clip-path: polygon(0 0,95% 0,68.5% 100%,0 100%);
+}
+.pic_itr3 .right_itr .pic_itr_img{
+    width: 100%;
+    right: 18.25%;
+    top: 57.5px;
+    position: absolute;
+    clip-path: polygon(31.5% 0,100% 0,100% 100%,5% 100%);
+}
+.pic_itr .left_itr .hid,.pic_itr .right_itr .hid{
+    position: relative;
+    visibility: hidden;
+}
+.back_block{
+    position: absolute;
+    background-image: url(../picture/PLAYER_ITR/Triplets.png);
+    background-repeat: repeat-y;
+    background-size: 80%;
+    background-position: center;
+    /* opacity: .8; */
+    /* filter: blur(3px); */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 230px;
+    width: 80%;
+    height: 89%;
+    background-color: #0B153C;
+    z-index: -2;
+}
+
+
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    min-width: 1200px;
+    height: 120px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer_inner{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.footer_top{
+    display: flex;
+    width: 300px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer_top a{
+    width: 30px;
+    height: 30px;
+}
+.footer_top img{
+    width: 100%;
+    height: 100%;
+}
+.footer_bot{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}

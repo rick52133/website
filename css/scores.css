@@ -313,7 +313,7 @@ tr{
 .text_left{
     text-align: left;
 }
-.odd{
+tr:nth-child(2n - 1){
     background-color: #DEDEDE	;
 }
 table{

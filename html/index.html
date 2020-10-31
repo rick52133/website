@@ -640,12 +640,12 @@
             $(function () {
 
                 // 使用者點擊按鈕，會執行以下 function 裡的程式
-                $(".player_photo_img").on("mouseover", function () {
+                $(".player_photo").on("mouseover", function () {
 
                     // 1. 在 .the_block 這個元素上，加上 animate__bounce 這個 class(同時也會自動加上 animate__animated 這個 class)。
                     // 2. 效果執行完後，會自動移除 animate__animated 和 animate__bounce 這兩個 class。
-                    animateCSS('.player_1', 'pulse');
-
+                    // animateCSS('.player_1', 'pulse');
+                    animateCSS('.player_photo', 'pulse');
                 });
 
             })
