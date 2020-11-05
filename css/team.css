@@ -10,14 +10,13 @@
     height: 560px;
     margin: 0 auto;
     color: white;
-    /* color: red; */
     text-shadow: 10px 13px 29px #1d428a;
     display: flex;
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
     background-position: center;
-    background-image: url(../picture/teams/All-Star-facts-1600x897.jpg);
+    background-image: url(../picture/NEWS/kobe2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -229,7 +228,5 @@ li:nth-child(2n) .team_name h2{
     }
 
 }
-.nav_inner:nth-child(3){
-    color: ;
-}
+
 

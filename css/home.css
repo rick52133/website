@@ -132,6 +132,9 @@ video{
     .left_news{
         width: 100%;
     }
+    video{
+        height:90vh;
+    }
 
 }
 
@@ -367,6 +370,7 @@ video{
 }
 .player_photo .teamlogo img{
     width: 100%;
+    z-index: 2;
 }
 
 .player_1,.player_2,.player_3{
