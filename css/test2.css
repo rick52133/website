@@ -102,17 +102,17 @@ main{
 }
 .pic_itr3 .left_itr .pic_itr_img{
     width: 100%;
-    left: 18.25%;
+    left: 16.5%;
     position: absolute;
     bottom: 57.5px;
-    clip-path: polygon(0 0,95% 0,68.5% 100%,0 100%);
+    clip-path: polygon(0 0,97% 0,70% 100%,0 100%);
 }
 .pic_itr3 .right_itr .pic_itr_img{
     width: 100%;
-    right: 18.25%;
+    right: 16.5%;
     top: 57.5px;
     position: absolute;
-    clip-path: polygon(31.5% 0,100% 0,100% 100%,5% 100%);
+    clip-path: polygon(30% 0,100% 0,100% 100%,3% 100%);
 }
 .pic_itr .left_itr .hid,.pic_itr .right_itr .hid{
     position: relative;

@@ -5,126 +5,16 @@
 body{
     background-color: #ebebeb;
 }
-/* 設定賽程表 */
-.sch{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 90px;
-    display: flex;
-}
-.sch .sch_inner{
-    width: calc(100% - 60px);
-    background-color: white;
-    display: flex;
-    overflow: hidden;
-    /* border: 1px solid red; */
-}
-.item{
-    min-width: 160px;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 10px;
-    padding-top: 5px;
-    border-right: 1px solid rgba(0,0,0,0.4);
-}
-.item-top-con{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-}
-.logo_and_name{
-    display: flex;
-    align-items: center;
-}
-.logo_and_name img{
-    margin: 0 10px;
-}
-.item-top-con img{
-    width: 25px;
-    height: 25px;
-}
-.item-buttom{
-    font-weight: bold;
-    color: rgba(0,0,0,0.4);
-    text-align: center;
-    padding-bottom: 5px;
-    
-}
-.sch .leff_but,.sch .right_but{
-    /* border: 1px solid blue; */
-    height: 100%;
-    width: 60px;
-    cursor: pointer;
-}
-.sch .leff_but button,.sch .right_but button{
-    border-style: none;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 700px;
-}
-.sch .leff_but button,.sch .right_but button:hover{
-    color: red;
-}
-
-/* 設定導覽列 */
-.nav{
-    /* border: 1px solid black; */
-    width: 100%;
-    min-width: 1200px;
-    margin: 0 auto;
-    height: 60px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #1d428a;
-    background-color: black;
-}
-.nav .nav_inner{
-    /* border: 1px solid white; */
-    height: 60px;
-}
-.nav .nav_inner a{
-    /* border: 1px solid wheat; */
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    line-height: 60px;
-}
-.nav_inner:nth-child(4) a{
-    color: #e51937;
-}
-.nav .nav_inner a:hover{
-    color: #e51937;
-}
-.nav .logo{
-    /* border: 1px solid white; */
-    width: 150px;
-    height: 60px;
-    position: relative;
-}
-.nav .logo img{
-    width: 100%;
-    position: absolute;
-    top: -40%;
-    z-index: 999;
-}
 
 /* 標題 */
 .playerItr_title{
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 700px;
     margin: 0 auto;
     background-image: url(../picture/PLAYER_ITR/Joe-Johnson.png);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -142,7 +32,6 @@ body{
     font-size: 16px;
     display: block;
     color: rgb(175, 175, 175);
-    font-weight: bold;
 }
 .title_player_box{
     width: 100%;
@@ -160,6 +49,8 @@ body{
     font-weight: bolder;
     font-size: 80px;
     color: white;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
     /* padding: 30px; */
     /* text-shadow: 0 0 4px #FFF, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 10px #f80, 2px -25px 20px #f20; */
 }
@@ -168,20 +59,88 @@ body{
     vertical-align: middle;
     margin-right: 10px;
 }
+@media screen and (max-width:1200px){
+    .title_player_box{
+        padding-left: 30px;
+    }
+    .title_player_box span:nth-child(3){
+        font-size: 40px;
+    }
+    .firstname,.lastname{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:768px){
+    .playerItr_title{
+        background-position: right 35% center; 
+        height: 600px;
+        align-items: flex-end;
+    }
+    .firstname,.lastname{
+        line-height: 70px;
+        font-size: 60px;
+    }
+    .title_logo{
+        width: 70px;
+    }
+    .title_player_box span:nth-child(3){
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:576px){
+    .playerItr_title{
+        background-position: right 35% center; 
+        height: 400px;
+    }
+    .title_player_box span:nth-child(3){
+        font-size: 25px;
+    }
+    .firstname,.lastname{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .title_logo{
+        width: 40px;
+    }
+}
+@media screen and (max-width:400px){
+    .title_player_box{
+        padding-left: 15px;
+    }
+    .playerItr_title{
+        background-position: right 35% center; 
+        height: 350px;
+    }
+    .firstname,.lastname{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .title_player_box span:nth-child(3){
+        font-size: 20px;
+    }
+}
 
 /* 球員數據 */
 .player_stat_box{
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     display: flex;
     flex-direction: column;
     font-size: 20px;
     background-color: #0B153C;
     color: white;
+    border-top: 2px solid #003D79;
+    
 }
 .player_stat_title{
     text-align: center;
     padding: 20px 10px;
+}
+.player_stat_title h2{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
 }
 .player_stat_inner{
     width: 100%;
@@ -194,17 +153,21 @@ body{
     width: 40%;
     display: flex;
     flex-direction: column;
-    border: 2px solid #003D79	;
-    border-radius: 5px;
+    align-items: center;
 }
 .stat_label{
     text-align: center;
     padding: 10px;
-    border-bottom: 2px solid 	#003D79	;
+    background-color: #003D79;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 .stat_body{
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    border: 2px solid #003D79	;
+    border-radius: 0 0 5px 5px;
 }
 .stat_container{
     display: flex;
@@ -219,6 +182,7 @@ body{
 }
 .other_itr_box{
     width: 48%;
+    min-width: 635px;
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
@@ -234,8 +198,10 @@ body{
     justify-content: space-between;
     padding: 10px 0;
 }
+
 .other_itr_inner span:last-child{
     font-weight: bold;
+    
 }
 .healthy_circle{
     width: 20px;
@@ -246,11 +212,96 @@ body{
     margin-right: 15px;
     /* vertical-align: middle; */
 }
+@media screen and (max-width:1200px) and (min-width:993px){
+    .stat_container{
+        padding: 10px;
+    }
+    .other_itr_box{
+        width: 57.5%;
+        min-width: auto;
+        padding-left: 5px;
+    }
+    .other_itr_left{
+        width: 43%;
+    }
+}
+@media screen and (max-width:992px){
+    .player_stat_inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat{
+        width: 74%;
+    }
+
+    .other_itr_box{
+        width: 83%;
+        min-width: 561px;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:577px){
+    .stat{
+        width: 77%;
+    }
+    .other_itr_box{
+        font-size: 18px;
+        min-width: 535px;
+    }
+    .other_itr:nth-child(2){
+        width: 50%;
+        min-width: 278.2px;
+    }
+    .other_itr_left{
+        width: 45%;
+    }
+}
+@media screen and (max-width:576px){
+    .stat{
+        width: 85%;
+    }
+    .other_itr_box{
+        flex-direction: column;
+        align-items: center;
+        min-width: auto;
+        width: 76%;
+    }
+    .other_itr{
+        width: 95%;
+    }
+    .stat_num{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:464px){
+    .player_stat_inner{
+     font-size: 16px;
+    }
+    .stat_num{
+        font-size: 25px;
+    }
+    .stat{
+        min-width: 348.15px;
+    }
+    .stat_container{
+        padding: 7px;
+    }
+    .player_stat_title h2{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:359px){
+    .stat{
+        min-width: auto;
+    }
+}
 
 /* 球員照片 */
 main{
     width: 100%;
-    min-width: 1200px;
+    overflow: hidden;
+    /* min-width: 1200px; */
 }
 .pic_itr_box{
     width: 80%;
@@ -261,9 +312,11 @@ main{
 }
 .pic_itr_title{
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
     padding: 70px 0;
+}
+.pic_itr_title h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
 }
 .pic_itr{
     width: 100%;
@@ -281,7 +334,17 @@ main{
     font-weight: bold;
     color: white;
     position: relative;
-    
+    animation-delay: 0.7s;
+    visibility: hidden;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    /* visibility: visible; */
+}
+.pic_itr2 .pic_left_label{
+    left: 15%;
+}
+.pic_itr2 .pic_right_label{
+    right: 15%;
 }
 @keyframes move{
     0% {
@@ -310,33 +373,50 @@ main{
 }
 .pic_itr1 .left_itr .pic_itr_img{
     width: 100%;
-    left: 10%;
+    left: 16%;
+    position: absolute;
+    top: 57.5px;
     clip-path: polygon(0 0,100% 0,73% 100%,0 100%);
 }
+
 .pic_itr1 .right_itr .pic_itr_img{
     width: 100%;
-    right: 10%;
+    right: 16%;
+    bottom: 57.5px;
+    position: absolute;
     clip-path: polygon(27% 0,100% 0,100% 100%,0 100%);
 }
 .pic_itr2 .left_itr .pic_itr_img{
     width: 100%;
-    left: 10%;
-    clip-path: polygon(0 0,57% 0,100% 100%,0 100%);
+    left: 20.5%;
+    top: 57.5px;
+    position: absolute;
+    clip-path: polygon(0 0,60% 0,100% 100%,0 100%);
 }
 .pic_itr2 .right_itr .pic_itr_img{
     width: 100%;
-    right: 10%;
-    clip-path: polygon(0 0,100% 0,100% 100%,43% 100%);
+    right: 20.5%;
+    bottom: 57.5px;
+    position: absolute;
+    clip-path: polygon(0 0,100% 0,100% 100%,40% 100%);
 }
 .pic_itr3 .left_itr .pic_itr_img{
     width: 100%;
-    left: 10%;
-    clip-path: polygon(0 0,95% 0,68% 100%,0 100%);
+    left: 16.5%;
+    position: absolute;
+    bottom: 57.5px;
+    clip-path: polygon(0 0,97% 0,70% 100%,0 100%);
 }
 .pic_itr3 .right_itr .pic_itr_img{
     width: 100%;
-    right: 10%;
-    clip-path: polygon(32% 0,100% 0,100% 100%,5% 100%);
+    right: 16.5%;
+    top: 57.5px;
+    position: absolute;
+    clip-path: polygon(30% 0,100% 0,100% 100%,3% 100%);
+}
+.pic_itr .left_itr .hid,.pic_itr .right_itr .hid{
+    position: relative;
+    visibility: hidden;
 }
 .back_block{
     position: absolute;
@@ -354,47 +434,92 @@ main{
     background-color: #0B153C;
     z-index: -2;
 }
+@media screen and (max-width:992px){
+    .pic_itr_box{
+        width: 90%;
+    }
+    .fireball{
+        width: 55px;
+    }
+    .pic_itr_label{
+        font-size: 35px;
+        padding-bottom: 10px;
+        padding-top: 19.5px;
+    }
+    .pic_itr {
+        padding-bottom: 50px;
+    }
+    .pic_itr1 .left_itr .pic_itr_img,.pic_itr2 .left_itr .pic_itr_img,.pic_itr3 .right_itr .pic_itr_img{
+        top: 40px;
+    }
+    .pic_itr1 .right_itr .pic_itr_img,.pic_itr2 .right_itr .pic_itr_img,.pic_itr3 .left_itr .pic_itr_img{
+        bottom: 40px;
+    }
+}
+@media screen and (max-width:768px){
+    .pic_itr_title{
+        padding: 40px 0;
+    }
+    .pic_itr_title h3{
+        font-size: 30px;
+    }
+    .pic_itr_box{
+        width: 95%;
+    }
+    .fireball{
+        width: 50px;
+    }
+    .pic_itr_label{
+        font-size: 30px;
+        padding-bottom: 10px;
+        padding-top: 19.5px;
+    }
+    .pic_itr1 .left_itr .pic_itr_img,.pic_itr2 .left_itr .pic_itr_img,.pic_itr3 .right_itr .pic_itr_img{
+        top: 37px;
+    }
+    .pic_itr1 .right_itr .pic_itr_img,.pic_itr2 .right_itr .pic_itr_img,.pic_itr3 .left_itr .pic_itr_img{
+        bottom: 37px;
+    }
+    .back_block{
+        top: 140px;
+    }
+}
+@media screen and (max-width:576px){
+    .pic_itr_box{
+        width: 105%;
+        position: relative;
+        right: 2.5%;
+    }
+    .pic_itr_title{
+        padding: 40px 10px 30px 10px;
+    }
+    .fireball{
+        width: 40px;
+    }
+    .pic_itr_label{
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    .pic_itr1 .left_itr .pic_itr_img,.pic_itr2 .left_itr .pic_itr_img,.pic_itr3 .right_itr .pic_itr_img{
+        top: 31px;
+    }
+    .pic_itr1 .right_itr .pic_itr_img,.pic_itr2 .right_itr .pic_itr_img,.pic_itr3 .left_itr .pic_itr_img{
+        bottom: 31px;
+    }
 
+}
+@media screen and (max-width:476px){
+    .fireball{
+        width: 30px;
+    }
+    .pic_itr_label{
+        font-size: 20px;
+    }
+    .pic_itr1 .left_itr .pic_itr_img,.pic_itr2 .left_itr .pic_itr_img,.pic_itr3 .right_itr .pic_itr_img{
+        top: 27.5px;
+    }
+    .pic_itr1 .right_itr .pic_itr_img,.pic_itr2 .right_itr .pic_itr_img,.pic_itr3 .left_itr .pic_itr_img{
+        bottom: 27.5px;
+    }
+}
 
-
-/* footer */
-.footer{
-    margin-top: 50px;
-    width: 100%;
-    min-width: 1200px;
-    height: 120px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
-.footer_inner{
-    width: 55%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid white; */
-}
-.footer_top{
-    display: flex;
-    width: 300px;
-    height: 50%;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-.footer_top a{
-    width: 30px;
-    height: 30px;
-}
-.footer_top img{
-    width: 100%;
-    height: 100%;
-}
-.footer_bot{
-    height: 50%;
-    display: flex;
-    align-items: center;
-}

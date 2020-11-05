@@ -125,7 +125,7 @@ body{
 }
 .pct_title{
     font-size: 22px;
-    margin-right: 16px;
+    margin-right: 10px;
     margin-left: 5px;
     width: 55px;
     height: 32px;
@@ -137,6 +137,7 @@ body{
 }
 .pct_num{
     font-size: 30px;
+    padding-right: 5px;
 }
 @media screen and (max-width:1200px){
     .teamItr_title{
@@ -192,7 +193,8 @@ body{
         font-size: 20px;
     }
     .pct_title{
-        margin-right: 10px;
+        margin-right: 5px;
+        width: 50px;
     }
 }
 
@@ -307,12 +309,25 @@ body{
         width: 90%;
     }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:415px){
     .team_scoreboard_inner{
         width: 100%;
     }
+    .pct{
+        width: 34%;
+    }
     .team_scoreboard{
         width: 100%;
+    }
+}
+@media screen and (max-width:350px){
+    .score_team{
+        margin: 0;
+        justify-content:space-around;
+    }
+    .score_teamlogo{
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -322,7 +337,6 @@ body{
     width: 80%;
     margin: 15px auto;
     display: flex;
-    /* justify-content: space-between; */
 }
 .teamItr_content{
     width: 43%;
@@ -336,13 +350,12 @@ body{
     position: sticky;
     top: 36px;
 }
-.teamItr_content h1{
+.teamItr_content h2{
     margin-bottom: 21px;
+    font-size: 35px;
 }
 .teamItr_player_list{
     width: 70%;
-    /* background-color: white; */
-    padding: 15px;
 }
 .teamItr_player_list_inner{
     width: 100%;
@@ -352,6 +365,7 @@ body{
 }
 .player_photo_box{
     width: 40%;
+    min-width: 274px;
     padding: 15px;
     position: relative;
     margin-right: 35px;
@@ -380,6 +394,9 @@ body{
 .coach_polygon{
     background-color: white;
 }
+.playerItr{
+    width: 60%;
+}
 .playerItr h3{
     font-size: 35px;
     margin-bottom: 13px;
@@ -397,4 +414,58 @@ body{
 .more a{
     text-decoration: none;
     font-weight: bold;
+}
+@media screen and (max-width:1200px){
+    .main{
+        width: 90%;
+    }
+}
+@media screen and (max-width:992px){
+    .main{
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .teamItr_content{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .teamItr_player_list{
+        width: 80%;
+    }
+    .teamItr_content_inner{
+        position: relative;
+        top: auto; 
+    }
+    .player_photo_box{
+        padding: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .teamItr_player_list{
+        width: 100%;
+    }
+    .playerItr h3{
+        margin-bottom: 5px;
+    }
+    .player_photo_box{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:576px){
+    .teamItr_player_list_inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .player_photo_box{
+        margin-bottom: 30px;
+    }
+    .playerItr{
+        width: auto;
+    }
+    .teamItr_content{
+        padding: 22px;
+    }
 }
