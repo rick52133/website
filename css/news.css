@@ -25,9 +25,11 @@
     font-size: 80px;
 } */
 .container_box{
-    border: 1px solid #F0F0F0;
     background-color: #F0F0F0;
     margin-bottom: 40px;
+}
+.container_box div{
+    box-sizing: content-box !important;
 }
 .container_title{
     font-family: 'Abril Fatface', cursive;
@@ -53,6 +55,7 @@
     transition: all 1s ease-in-out;
     height: 75vmin;
     position: relative;
+    overflow: hidden;
   }
   
   .container .card .card__head {
@@ -63,7 +66,6 @@
     transform-origin: 0% 0%;
     transition: all 0.5s ease-in-out;
     width: 100%;
-    /* text-align: center; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -82,8 +84,6 @@
   }
   
   .container .card:hover .card__head {
-    /* text-align: center; */
-    /* top: calc(100% - 2em); */
     color: white;
     background: rgba(0, 0, 0, 0.5);
     font-size: 2em;
@@ -103,6 +103,71 @@
   .container .card:not(:nth-child(5)) {
     margin-right: 1em;
   }
+
+/* 手機板手風琴 */
+.container_mob {
+    display: none;
+}
+.container_mob .card {
+    transition: all 1s ease-in-out;
+    height: 75vmin;
+    position: relative;
+  }
+.container_mob .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+  }
+  .container_mob .card:hover img {
+    filter: grayscale(0);
+  }
+  .container_mob .card__head{
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    line-height: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px 30px 15px;
+  }
+  .slick-dots{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      padding-bottom: 5px;
+  }
+
+@media screen and (max-width:768px){
+    .container_box div{
+        box-sizing: border-box !important;
+    }
+    .container{
+        display:none;
+    }
+    .container_title h2{
+        transform: translateY(0);
+        padding: 10px 0;
+    }
+    .container_mob {
+        display: block;
+    }
+}
+@media screen and (max-width:576px){
+    .container_title h2{
+        font-size: 30px;
+    }
+    .container_mob .card {
+        transition: all 1s ease-in-out;
+        height: 100vmin;
+        position: relative;
+      }
+}
+
 /* 最新消息 */
 .news_main{
     width: 80%;
@@ -116,7 +181,6 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg,#f6f0f200 50%, #F0F0F0 50%);
-    /* background-color: rgba(242,239,246,.3); */
 }
 .news_box:nth-child(2n) {
     background: linear-gradient(225deg,#f6f0f200 50%, #F0F0F0 50%);
@@ -131,7 +195,6 @@
     width: 100%;
     position: relative;
     z-index: -1;
-    /* object-fit: cover; */
 }
 .text_box{
     font-size: 16px;
@@ -159,7 +222,6 @@ h3{
     font-family: 'Abril Fatface', cursive;
 }
 .text_box p{
-    /* text-shadow: 1px 1px 27px #f0f0f0; */
     color: white;
 }
 @media screen and (max-width:1200px){
@@ -184,12 +246,10 @@ h3{
     }
     .news_box{
         flex-direction: column;
-        /* padding-bottom: 30%; */
     }
     .text_box{
         right: 0;
         width: 100%;
-        /* transform: translateY(-60%); */
         position: absolute;
         bottom: 0;
     }
@@ -202,9 +262,6 @@ h3{
     .news_box:nth-child(2n) .pic_box{
         order: 0;
     }
-    /* .news_header h2{
-        font-size: 60px;
-    } */
 }
 @media screen and (max-width:576px){
     .news_box{
@@ -217,12 +274,6 @@ h3{
     .text_box{
         padding: 10px 20px;
     }
-    /* .news_header h2{
-        font-size: 40px;
-    }
-    .news_header{
-        height: 400px;
-    } */
 }
 @media screen and (max-width:476px){
     .news_box{

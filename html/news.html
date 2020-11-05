@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>news</title>
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../css/news.css">
     <link rel="stylesheet" href="../css/hamburgers-master/dist/hamburgers.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -317,6 +319,29 @@
                 <div class="card__head">Trail Blazers Courtside is the team’s weekly talk show.</div>
             </div>
         </div>
+
+        <div class="container_mob fade">
+            <div class="card">
+                <img src="https://www.nba.com/heat/sites/heat/files/gettyimages-106769406.jpg">
+                <div class="card__head">Steve Koonin Named 2020 Most Admired CEO Honoree</div>
+            </div>
+            <div class="card">
+                <img src="https://www.nba.com/blazers/sites/blazers/files/gettyimages-1228161438.jpg">
+                <div class="card__head">Best Plays From Anfernee Simons in 2019-20</div>
+            </div>
+            <div class="card">
+                <img src="https://www.nba.com/rockets/sites/rockets/files/getty-images-1228348391.jpg">
+                <div class="card__head">MOCK DRAFT » Quick Turnaround For The 16th Pick</div>
+            </div>
+            <div class="card">
+                <img src="https://www.nba.com/heat/sites/heat/files/gettyimages-467078724.jpg">
+                <div class="card__head">Butler Records Another Finals Triple-Double</div>
+            </div>
+            <div class="card">
+                <img src="https://www.nba.com/clippers/sites/clippers/files/1200-gallery-190825-28.jpg">
+                <div class="card__head">Trail Blazers Courtside is the team’s weekly talk show.</div>
+            </div>
+        </div>
     </div>
 
 
@@ -422,10 +447,22 @@
         </div>
     </div>
     <script src="../jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/navSch.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        $(document).ready(function () {
+            $('.fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                arrows: false,
+            });
+        })
     </script>
 </body>
 
