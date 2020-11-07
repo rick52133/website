@@ -113,7 +113,7 @@ main{
     font-weight: bold;
     margin-right: 5px;
     display: inline-block;
-   
+    border: 1px solid red;
 }
 .tab_but:hover{
     border-bottom: 3px solid rgb(5, 122, 255);
