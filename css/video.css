@@ -114,7 +114,6 @@ main{
     margin-right: 5px;
     display: inline-block;
     padding: 0 3px;
-    border: 1px solid red;
     -webkit-appearance: none
 }
 .tab_but:hover{
@@ -239,8 +238,6 @@ main{
 .overlay {
     width: 70%;
     position: relative;
-    right: 8.4px;
-    
 }
 .pop_close_but{
     height: 60px; 
