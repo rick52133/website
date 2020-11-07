@@ -117,10 +117,6 @@ main{
     font-weight: bold;
     margin-right: 5px;
 }
-.tabs_box .Play{
-    border-bottom: 3px solid rgb(5, 122, 255);
-    color: rgb(255, 255, 255);
-}
 .tab_but:hover{
     border-bottom: 3px solid rgb(5, 122, 255);
     color: rgb(255, 255, 255);
@@ -137,17 +133,21 @@ main{
     padding: 13px 0;
     border-bottom: 1px solid rgb(195, 195, 195);
 }
-.Popular{
+.tabpanel_box span{
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    margin-left: 32px;
+}
+.active_inner span{
     color: #e51937;
 }
 .tabpanel_inner span:hover{
     color: #e51937;
 }
-.tabpanel_box a{
-    text-decoration: none;
-    color: rgb(221, 221, 221);
-    font-size: 20px;
-    margin-left: 32px;
+.active{
+    border-bottom: 3px solid rgb(5, 122, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -157,6 +157,7 @@ main{
     margin-top: 20PX;
     padding-bottom: 36px;
     width: 70%;
+    overflow: hidden;
 }
 .section_title_box{
     width: 100%;
@@ -165,7 +166,7 @@ main{
     margin-bottom: 12px;
     
 }
-.section_title_box h1{
+.section_title_box h2{
     font-size: 20px;
     text-align: center;
 }
@@ -186,6 +187,7 @@ main{
 .video_pic_box{
     width: 100%;
     position: relative;
+    cursor: pointer;
 }
 .video_pic{
     width: 100%;
@@ -201,6 +203,7 @@ main{
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    
 }
 .video_play_icon::before{
     content: "";
@@ -218,6 +221,73 @@ main{
     font-weight: bold;
     line-height: 22px;
 }
+/* 跳出的YT影片內容 */
+.overlay_box {
+    width: 100VW;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 控制容器的寬度，padding設%數時，是依據父元素的寬，因此無法直接對pop下寬度 */
+.overlay {
+    width: 70%;
+    position: relative;
+    right: 8.4px;
+    
+}
+.pop_close_but{
+    height: 60px; 
+    width: 60px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+    
+}
+.pop_fox{
+    height: 3px;
+    display: inline-block;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+}
+.pop_close_but:hover .pop_fox{
+    background-color: red;
+}
+.pop_fox_top{
+    transform: rotate(45deg);
+}
+.pop_fox_bot{
+    transform: rotate(-45deg);
+}
+/* 固定容器長寬比為16:9 */
+.pop {
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 使用絕對定位把寬高都填滿容器，若使用相對定位，因為有PADDING的關係會無法填滿 */
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
 .see_more{
     width: 100%;
     padding: 20px 0;
@@ -323,6 +393,9 @@ main{
      }
      .tabs_box{
         padding-right: 4px;
+    }
+    .overlay{
+        width: 85%;
     }
 }
 @media screen and (max-width:320px){

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+
+        .overlay_box {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* 控制容器的寬度，padding設%數時，是依據父元素的寬，因此無法直接對pop下寬度 */
+        .overlay {
+            width: 70%;
+        }
+
+        /* 固定容器長寬比為16:9 */
+        .pop {
+            padding-top: 56.25%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 使用絕對定位把寬高都填滿容器，若使用相對定位，因為有PADDING的關係會無法填滿 */
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay_box">
+        <div class="overlay">
+            <div class="pop">
+                <iframe src="https://www.youtube.com/embed/qBLN-sOL6eU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

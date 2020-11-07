@@ -3,30 +3,11 @@
     box-sizing: border-box;
 }
 
-/* 標題 */
-/* .news_header{
-    width: 100%;
-    height: 560px;
-    font-family: 'Abril Fatface', cursive;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 10px 13px 29px #1d428a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-image: url(../picture/NEWS/kobe2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.news_header h2{
-    font-size: 80px;
-} */
+
 .container_box{
     background-color: #F0F0F0;
     margin-bottom: 40px;
+    
 }
 .container_box div{
     box-sizing: content-box !important;
@@ -73,6 +54,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: 'Abril Fatface', cursive;
   }
 
   .container .card:hover {
@@ -133,6 +115,7 @@
     bottom: 0;
     left: 0;
     padding: 10px 15px 30px 15px;
+    font-family: 'Abril Fatface', cursive;
   }
   .slick-dots{
       position: absolute;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/hamburgers-master/dist/hamburgers.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -305,44 +306,94 @@
                 </div>
                 <div class="tabs_box">
                     <div class="tabs_inner">
-                        <button class="Play tab_but">Play</button>
-                        <button class="Teams tab_but">Teams</button>
-                        <button class="Players tab_but">Players</button>
-                        <button class="Games tab_but">Games</button>
+                        <button class="tab_but" title="Play">Play</button>
+                        <button class="tab_but" title="Teams">Teams</button>
+                        <button class="tab_but" title="Players">Players</button>
+                        <button class="tab_but" title="Games">Games</button>
                     </div>
                 </div>
-                <div class="tabpanel_box">
-                    <div class="tabpanel"></div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+
+                <div>
+                    <section class="tabpanel_box Play">
+                        <!-- <div class="tabpanel"></div> -->
+                        <div class="tabpanel_inner" title="one">
                             <span class="Popular">Most Popular</span>
-                        </a>
-                    </div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+                        </div>
+                        <div class="tabpanel_inner" title="two">
                             <span>Latest</span>
-                        </a>
-                    </div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+                        </div>
+                        <div class="tabpanel_inner" title="two">
                             <span>Hilight Today</span>
-                        </a>
-                    </div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+                        </div>
+                        <div class="tabpanel_inner" title="two">
                             <span>Top 10 of 2019 Season</span>
-                        </a>
-                    </div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+                        </div>
+                        <div class="tabpanel_inner" title="two">
                             <span>Top 5 Play</span>
-                        </a>
-                    </div>
-                    <div class="tabpanel_inner">
-                        <a href="">
+                        </div>
+                        <div class="tabpanel_inner" title="two">
                             <span>Fratures</span>
-                        </a>
-                    </div>
+                        </div>
+                    </section>
+
+                    <section class="tabpanel_box Teams">
+                        <!-- <div class="tabpanel"></div> -->
+                        <div class="tabpanel_inner" title="three">
+                            <span class="Popular">Ghost ballers</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Killer3s</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Tristate</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Bivouac</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Ballhogs</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Triplets</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Enemies</span>
+                        </div>
+                    </section>
+
+                    <section class="tabpanel_box Players">
+                        <!-- <div class="tabpanel"></div> -->
+                        <div class="tabpanel_inner" title="four">
+                            <span class="Popular">Joe Johnson</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Al Jefferson</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Robert Horry</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>Steve Nash</span>
+                        </div>
+                    </section>
+                    <section class="tabpanel_box Games">
+                        <!-- <div class="tabpanel"></div> -->
+                        <div class="tabpanel_inner" title="one">
+                            <span class="Popular">Today</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>SEP 13,2020</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>SEP 10,2020</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>SEP 9,2020</span>
+                        </div>
+                        <div class="tabpanel_inner" title="two">
+                            <span>SEP 7,2020</span>
+                        </div>
+                    </section>
                 </div>
 
             </div>
@@ -351,102 +402,122 @@
         <section class="sec">
             <div class="section_title_box">
                 <div class="section_title_inner">
-                    <h1>Most Popular</h1>
+                    <h2 class='animate__animated animate__bounceInRight'>Most Popular</h2>
                 </div>
             </div>
 
-            <div class="video_box">
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+            <div>
+                <div class="video_box one">
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/b4_kDYTppcY"
+                            hover_src="../picture/videos/hover/nate.gif">
                             <img class="video_pic"
-                                src="https://i.ytimg.com/vi/pNC0genWhcE/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBFRFuhXBvTV3-rQLfNSt18RFJx3A"
+                                src="https://i.ytimg.com/vi/b4_kDYTppcY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCBaJBXaWWfgxKfycotlvutSEVOdA"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
-                        <p>5'7 Trae Jefferson Is UNSTOPPABLE! The Most EXCITING Player In High School!</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+                        <p>Nate Robinson EPIC Full Season 2 Highlights | BIG3 Basketball @Nate Robinson</p>
+
+                        <div class="overlay_box">
+                            <div class="pop_close_but"><span class="pop_fox pop_fox_top"></span><span
+                                    class="pop_fox pop_fox_bot"></span></div>
+                            <div class="overlay">
+                                <div class="pop">
+                                    <iframe src="" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/OgFxFEqujRM"
+                            hover_src="../picture/videos/hover/amare.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/OgFxFEqujRM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSEJE7y0lA1_JVRMA_Wr3WmzNS5g"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>Amare Stoudemire CRAZY Full Season 2 Highlights | BIG3 Basketball</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
-                            <img class="video_pic"
-                                src="https://i.ytimg.com/vi/O1ZscPvuXe8/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDmdbx0DtTZWm4iMEbmVTDfWUVlnA"
-                                alt="">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/IxhaZzT1JFM"
+                            hover_src="../picture/videos/hover/harden.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/IxhaZzT1JFM/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCpiWW1HYW3Vllr2YqfXjiAhFK-Hg"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>James Harden Drew League Debut Got SUPER HEATED!! NBA MVP vs Drew League MVP WENT AT IT!!</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/Wr1geVcBviw"
+                            hover_src="../picture/videos/hover/crazy.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/Wr1geVcBviw/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDtIIJFYlzTmHsTO1FB05-rVKcvfA"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>(CRAZY) Collin Sexton OFFICIAL SENIOR YEAR MIXTAPE! "Young Bull"</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/BG0dxvyLJT0"
+                            hover_src="../picture/videos/hover/zack.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/BG0dxvyLJT0/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDrQThh0WtUyCxkoRFffIFd9EhVDA"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>Zack Dawson OFFICIAL SENIOR YEAR MIXTAPE! TOP 3 PG IN THE NATION?</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/WPyWn0XJjxA"
+                            hover_src="../picture/videos/hover/chris.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/WPyWn0XJjxA/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCT6Gw06drko7cMDSPryjQJaXiLyg"
                                 alt="">
                             <div class="video_play_icon"></div>
                         </div>
                         <p>Chris "Birdman" Andersen 2018 Big3 Season Highlights</p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/nej6qKALLl0"
+                            hover_src="../picture/videos/hover/joe.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/nej6qKALLl0/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDBzREqRyketTknd3gkVvzQaTpXJA"
                                 alt="">
@@ -454,11 +525,12 @@
                         </div>
                         <p>Triplets vs 3 Headed Monsters - EPIC Game - Highlights | Week 7 | Season 3, BIG3 Basketball
                         </p>
-                    </a>
-                </div>
-                <div class="video_inner">
-                    <a href="">
-                        <div class="video_pic_box">
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
                             <img class="video_pic"
                                 src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
                                 alt="">
@@ -466,13 +538,413 @@
                         </div>
                         <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
                         </p>
-                    </a>
-                </div>
-                <div class="see_more">
-                    <button class="see_more_but">See More</button>
+
+                    </div>
+                    <div class="see_more">
+                        <button class="see_more_but">See More</button>
+                    </div>
+
                 </div>
 
+                <div class="video_box two">
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                        <div class="overlay_box">
+                            <div class="pop_close_but"><span class="pop_fox pop_fox_top"></span><span
+                                    class="pop_fox pop_fox_bot"></span></div>
+                            <div class="overlay">
+                                <div class="pop">
+                                    <iframe src="" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+                    </div>
+                    <div class="video_inner">
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="see_more">
+                        <button class="see_more_but">See More</button>
+                    </div>
+
+                </div>
+
+                <div class="video_box three">
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                        <div class="overlay_box">
+                            <div class="pop_close_but"><span class="pop_fox pop_fox_top"></span><span
+                                    class="pop_fox pop_fox_bot"></span></div>
+                            <div class="overlay">
+                                <div class="pop">
+                                    <iframe src="" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+                    </div>
+                    <div class="video_inner">
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/vBR7luBKlsY"
+                            hover_src="../picture/videos/hover/allen.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/vBR7luBKlsY/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA_nbLEesMzOEPsLV1kTYmJl1jojA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Allen Iverson - Full Plays From His BIG3 Debut Season | BIG 3 Basketball, Season 1, 2019</p>
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/O1ZscPvuXe8"
+                            hover_src="../picture/videos/hover/big3.gif">
+                            <img class="video_pic" src="../picture/videos/hq720.png" alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>BIG3 - Championship Game - Triplets vs Killer 3's - Full Game Highlights</p>
+
+                    </div>
+                    <div class="see_more">
+                        <button class="see_more_but">See More</button>
+                    </div>
+
+                </div>
+
+                <div class="video_box four">
+                    <div class="video_inner">
+
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
+                        </p>
+
+                        <div class="overlay_box">
+                            <div class="pop_close_but"><span class="pop_fox pop_fox_top"></span><span
+                                    class="pop_fox pop_fox_bot"></span></div>
+                            <div class="overlay">
+                                <div class="pop">
+                                    <iframe src="" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/BG0dxvyLJT0"
+                            hover_src="../picture/videos/hover/zack.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/BG0dxvyLJT0/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDrQThh0WtUyCxkoRFffIFd9EhVDA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Zack Dawson OFFICIAL SENIOR YEAR MIXTAPE! TOP 3 PG IN THE NATION?</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/OgFxFEqujRM"
+                            hover_src="../picture/videos/hover/amare.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/OgFxFEqujRM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCSEJE7y0lA1_JVRMA_Wr3WmzNS5g"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Amare Stoudemire CRAZY Full Season 2 Highlights | BIG3 Basketball</p>
+
+                    </div>
+                    <div class="video_inner">
+
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
+                        </p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/IxhaZzT1JFM"
+                            hover_src="../picture/videos/hover/harden.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/IxhaZzT1JFM/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCpiWW1HYW3Vllr2YqfXjiAhFK-Hg"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>James Harden Drew League Debut Got SUPER HEATED!! NBA MVP vs Drew League MVP WENT AT IT!!</p>
+
+                    </div>
+                    <div class="video_inner">
+
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
+                        </p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/BG0dxvyLJT0"
+                            hover_src="../picture/videos/hover/zack.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/BG0dxvyLJT0/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDrQThh0WtUyCxkoRFffIFd9EhVDA"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Zack Dawson OFFICIAL SENIOR YEAR MIXTAPE! TOP 3 PG IN THE NATION?</p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/WPyWn0XJjxA"
+                            hover_src="../picture/videos/hover/chris.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/WPyWn0XJjxA/hqdefault.jpg?sqp=-oaymwEZCOADEI4CSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCT6Gw06drko7cMDSPryjQJaXiLyg"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Chris "Birdman" Andersen 2018 Big3 Season Highlights</p>
+
+                    </div>
+                    <div class="video_inner">
+
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
+                        </p>
+
+                    </div>
+                    <div class="video_inner">
+
+                        <div class="video_pic_box" video_src="https://www.youtube.com/embed/oLymwgwGmPM"
+                            hover_src="../picture/videos/hover/salt.gif">
+                            <img class="video_pic"
+                                src="https://i.ytimg.com/vi/oLymwgwGmPM/hq720.jpg?sqp=-oaymwEZCNAFEJQDSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA-EX5y8AiI9RQ1ibT1uiKZ98O_Ew"
+                                alt="">
+                            <div class="video_play_icon"></div>
+                        </div>
+                        <p>Salt Lake City Stars Center Willie Reed Joins Utah Jazz Broadcast
+                        </p>
+
+                    </div>
+                    <div class="see_more">
+                        <button class="see_more_but">See More</button>
+                    </div>
+
+                </div>
             </div>
+
         </section>
     </main>
 
@@ -489,7 +961,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="../jquery/jquery-3.4.1.min.js"></script>
     <script>
@@ -509,7 +980,158 @@
                 $('.left_aside').removeClass('-on')
             });
 
+
         });
+
+        var isClick = true
+        $(function () {            //頁面寬度改變，重設賽式表距離
+            window.onresize = function () {
+                $('.item').css({
+                    right: 0
+                })
+                $(".left_but button").attr('disabled', true)
+                $(".right_but button").attr('disabled', false)
+            }
+
+
+            //右側按鈕
+            $(".right_but button").on("click", function () {
+                var width = $('.last_item').position().left //距離左邊按鈕的寬度
+                var fullWidth = $('.sch_inner').width() //父元素寬度
+                var right_margin = fullWidth - width//距離右邊按鈕的寬度
+
+                if (isClick) {
+                    isClick = false;
+                    //定時器
+                    setTimeout(function () {
+                        isClick = true;
+                    }, 500);//0.5秒内不能重複點擊
+
+                    if (right_margin > 0 && right_margin < 150) {
+                        $('.item').css({
+                            right: '+=150px'
+                        })
+                        $(this).attr('disabled', true)
+                    } else if (right_margin < 150) {
+                        console.log('right', right_margin)
+                        $('.item').css({
+                            right: '+=150px'
+                        })
+                    } else {
+                        $(this).attr('disabled', true)
+                    }
+                    $(".left_but button").attr('disabled', false)
+                }
+
+
+            });
+
+            //左側按鈕
+            $(".left_but button").attr('disabled', true)
+            $(".left_but button").on("click", function () {
+                var left_margin = $('.first_item').position().left //距離左邊按鈕距離
+
+                if (isClick) {
+                    isClick = false;
+                    //定時器
+                    setTimeout(function () {
+                        isClick = true;
+                    }, 500);//0.5秒内不能重複點擊
+
+                    if (left_margin < -150 && left_margin > -151) {
+                        $('.item').css({
+                            right: '-=150px'
+                        })
+                        $(this).attr('disabled', true)
+                        return
+                    }
+                    else if (left_margin < 0) {
+                        $('.item').css({
+                            right: '-=150px'
+                        })
+                    } else {
+                        $(this).attr('disabled', true)
+                    }
+                    $(".right_but button").attr('disabled', false)
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('.video_pic_box').click(function () {
+                $('iframe').attr('src', `${$(this).attr("video_src")}`)
+                $(".overlay_box").css('display', 'flex')
+
+            })
+            $('.pop_close_but').click(function () {
+                $(".overlay_box").css('display', 'none')
+                $('iframe').attr('src', ``)
+            })
+            var src_first
+            $('.video_pic_box').mouseenter(function () {
+
+                src_first = $(this).find('img').attr('src')
+                $(this).find('img').attr('src', `${$(this).attr("hover_src")}`)
+                $(this).find('.video_play_icon').css('display', 'none')
+
+            }).mouseleave(function () {
+                $(this).find('img').attr('src', `${src_first}`)
+                $(this).find('.video_play_icon').css('display', 'block')
+            })
+        })
+
+        $(document).ready(function () {
+            $('.tab_but').eq(0).addClass('active')
+
+            //$('.tab_but').eq(0).attr('title') 取得第一個TAB的TITLE
+            //$(`.${$('.tab_but').eq(0).attr('title')}`) 取得class為play的元素
+
+            //class為play的元素，其兄弟元素皆隱藏
+            $(`.${$('.tab_but').eq(0).attr('title')}`).siblings().hide()
+
+            $('.tab_but').click(function () {
+                $(this).addClass('active')
+                $('.tab_but').not(this).removeClass('active')
+
+                //目前選到的次選單
+                var nowSelect = $(`.${$(this).attr('title')}`)
+                //選到的次選單出現，沒選到的隱藏
+                nowSelect.show().siblings().hide()
+
+                //切換主選單時，次選單預設選取第一個(字體紅色)
+                nowSelect.find('div').eq(0).addClass('active_inner').siblings().removeClass('active_inner')
+
+                $('.section_title_inner h2').remove()
+                //切換主選單時，次選單預設選取第一個(h2顯示其text)
+                $('.section_title_inner').html(`<h2>${nowSelect.find('span').eq(0).text()}</h2>`)
+                $('.section_title_inner h2').addClass('animate__animated animate__bounceInRight')
+
+                nowSelect.find('div').eq(0).attr('title')
+                $(`.${nowSelect.find('div').eq(0).attr('title')}`).show().siblings().hide()
+            })
+
+
+            $('.tabpanel_box div:first-child').addClass('active_inner')
+
+            //第一個影片以外的都隱藏
+            $('.video_box').eq(0).siblings().hide()
+
+            //次選單切換
+            $('.tabpanel_inner').click(function () {
+                $(this).addClass('active_inner').siblings().removeClass('active_inner')
+
+                //h2的更換名稱
+                $('.section_title_inner h2').remove()
+                $('.section_title_inner').html(`<h2>${$(this).text()}</h2>`)
+                $('.section_title_inner h2').addClass('animate__animated animate__bounceInRight')
+
+
+                //切換次選單時，對應的影片出現
+                $(`.${$(this).attr('title')}`).show().siblings().hide()
+
+            })
+
+        })
     </script>
 </body>
 

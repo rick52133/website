@@ -73,6 +73,10 @@ main a{
     display: inline-block;
     padding: 10px 0 30px;
 }
+.right_a{
+    left: 100%;
+    transform: translateX(-100%);
+}
 main .team_logo{
     max-width: 412.5px;
     max-height: 300px;
@@ -173,12 +177,18 @@ main a:hover .right_explore{
     top:50%;
     font-family: 'Abril Fatface', cursive;
     letter-spacing: 2px;
-    transform: translateY(-50%);
+    transform: translateX(0) translateY(-50%);
     color: #0B153C;
     color: white;
-    text-shadow: -9px 8px 3px black;
+    /* text-shadow: -9px 8px 3px black; */
     font-weight: bold;
+    transition: all 0.5s;
 }
+li a:hover + .team_name h2{
+    transform: translateX(15px) translateY(-40px);
+    text-shadow: -15px 6px 3px black;
+}
+
 @media screen and (max-width:768px){
     .team_name h2{
         font-size: 35px;
@@ -221,6 +231,11 @@ li:nth-child(2n) .team_name h2{
     left: 25%;
     transform: translateY(-50%) translateX(-25%);
 }
+li:nth-child(2n) a:hover + .team_name h2{
+  
+    transform: translateX(-40px) translateY(-40px);
+}
+
 @media screen and (max-width:576px){
     li:nth-child(2n) .team_name h2{
         left: 15%;
@@ -228,5 +243,23 @@ li:nth-child(2n) .team_name h2{
     }
 
 }
+@media screen and (max-width:768px){
+    li a:hover + .team_name h2{
+        transform: translateX(15px) translateY(-30px);
+        text-shadow: -15px 6px 3px black;
+    }
+    li:nth-child(2n) a:hover + .team_name h2{
+  
+        transform: translateX(-30px) translateY(-30px);
+    }
+}
+@media screen and (max-width:576px){
+
+    li:nth-child(2n) a:hover + .team_name h2{
+  
+        transform: translateX(-10px) translateY(-30px);
+    }
+}
+
 
 
