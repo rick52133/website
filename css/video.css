@@ -114,6 +114,7 @@ main{
     margin-right: 5px;
     display: inline-block;
     border: 1px solid red;
+    -webkit-appearance: none
 }
 .tab_but:hover{
     border-bottom: 3px solid rgb(5, 122, 255);
