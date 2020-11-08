@@ -123,6 +123,7 @@
     display: inline-block;
     margin: 0 10px;
 }
+
 .left_box2 .time button{
     height: 50px;
     width: 40px;
@@ -135,6 +136,9 @@
 }
 .left_box2 .time button:hover{
     background-color: #006bb6;
+}
+.num1{
+    /* animation-duration:5s; */
 }
 .matchup{
     width: 100%;
@@ -172,7 +176,7 @@
     width: 23%;
 }
 .box2 .lose{
-    opacity: .5;
+    opacity: .3;
 }
 .team_matchup .team .scores{
     font-size: 45px;

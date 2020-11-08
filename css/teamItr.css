@@ -18,6 +18,27 @@ body{
     background-position: center;
     display: flex;
     align-items: center;
+    position: relative;
+}
+.path{
+    width: 100%;
+    align-self: flex-start;
+    padding-left: 70px;
+    position: absolute;
+    top: 0px;
+    transform: translateY(-100%);
+}
+.path_text{
+    font-size: 16px;
+    display: block;
+    color: black;
+}
+.path_text a{
+    /* color: white; */
+    text-decoration: none;
+}
+.path_text a:hover{
+    color: #e51937;
 }
 .title_logo{
     width: 16%;
@@ -171,6 +192,12 @@ body{
     .title_logo{
         margin-left: 5px;
         min-width: 163px;
+    }
+    .path{
+        padding-left: 15px;
+    }
+    .path_text{
+        font-size: 12px;
     }
     .title_team_name{
         font-size: 50px;
@@ -415,6 +442,48 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+.read{
+    line-height: 16px;
+    position: relative;
+}
+.read::before{
+    display: inline-block;
+    /* vertical-align: middle; */
+    content: "";
+    opacity: 0;
+    width: 4px;
+    height: 16px;
+    background: #e51937;
+    transition: transform .3s,opacity .2s;
+    margin-right: 10px;
+    transform: translateX(0px);
+    position: absolute;
+    top: 2.4px;
+}
+.read:hover::before{
+    opacity: 1;
+    transform: translateX(-15px);
+}
+
+.read::after{
+    display: inline-block;
+    /* vertical-align: middle; */
+    content: "";
+    opacity: 0;
+    width: 4px;
+    height: 16px;
+    background: #e51937;
+    transition: transform .3s,opacity .2s;
+    margin-right: 10px;
+    transform: translateX(-3px);
+    position: absolute;
+    top: 2.4px;
+}
+.read:hover::after{
+    opacity: 1;
+    transform: translateX(12px);
+}
+
 @media screen and (max-width:1200px){
     .main{
         width: 90%;

@@ -161,6 +161,28 @@
             <div class="item">
                 <div class="item-top-con">
                     <div class="logo_and_name">
+                        <img src="../picture/scores/killer3s.png" alt="">
+                        <span>KIL</span>
+                    </div>
+                    <span>30</span>
+                </div>
+
+                <div class="item-top-con">
+                    <div class="logo_and_name">
+                        <img src="../picture/scores/Triplets.png" alt="">
+                        <span>CON</span>
+                    </div>
+                    <span>40</span>
+                </div>
+
+                <div class="item-buttom">
+                    <p>SEP 14,2020</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-top-con">
+                    <div class="logo_and_name">
                         <img src="../picture/scores/Aliens.png" alt="">
                         <span>AL</span>
                     </div>
@@ -304,30 +326,7 @@
         <h2>LATEST NEWS</h2>
     </div>
 
-    <!-- <div class="main">
-        <div class="home_news">
-            <div class="left_news">
-                <div class="top_title_box">
-                    <div class="top_title">
-                        <a href="./news.html">
-                            <h3>2020 CONSENSUS DRAFT</h3>
-                            <p>The Warriors may wind up with Memphis' James Wiseman if they keep their pick.</p>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="bot_items">
-
-                </div>
-            </div>
-            <div class="mid_pic">
-                <img src="../picture/NEWS/IMG_7316-e1587571461244-980x670.png" class="top_inner" alt="">
-            </div>
-        </div>
-        <span class="bot">
-            <img src="../picture/news1.jpg" class="bot_inner" alt="">
-        </span>
-    </div> -->
     <div class="main">
         <div class="home_news">
             <div class="left_news">
@@ -386,8 +385,8 @@
             </div>
             <div class="star_player_box ">
                 <div class="img_hidden_box">
-                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1200">
-                        <!-- data-aos="zoom-in" data-aos-duration="1200" -->
+                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>James Harden</span></div>
                             <img src="../picture/home/harden/h1.png" alt="">
@@ -395,7 +394,8 @@
                     </div>
                 </div>
                 <div class="img_hidden_box">
-                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"
+                        data-aos-delay="150">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Luka Doncic</span></div>
                             <img src="../picture/home/D77/d1.png" alt="">
@@ -403,7 +403,8 @@
                     </div>
                 </div>
                 <div class="img_hidden_box">
-                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"
+                        data-aos-delay="300">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Lebron James</span></div>
                             <img src="../picture/home/LBJ/l1.png" alt="">
@@ -411,7 +412,8 @@
                     </div>
                 </div>
                 <div class="img_hidden_box">
-                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="star_player_inner" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true"
+                        data-aos-delay="450">
                         <a href="../html/playerItr.html">
                             <div class="hover_block"><span>Russel Westbrook</span></div>
                             <img src="../picture/home/west/r1.png" alt="">
@@ -630,11 +632,11 @@
                 });
             });
 
-            const animateCSS = (element, animation, prefix = 'animate__') =>
+            const animateCSS = (node, animation, prefix = 'animate__') =>
                 // We create a Promise and return it
                 new Promise((resolve, reject) => {
                     const animationName = `${prefix}${animation}`;
-                    const node = document.querySelector(element);
+                    // const node = document.querySelector(element);
 
                     node.classList.add(`${prefix}animated`, animationName);
 
@@ -652,12 +654,13 @@
             $(function () {
 
                 // 使用者點擊按鈕，會執行以下 function 裡的程式
-                $(".player_photo").on("mouseover", function () {
+                $(".player_photo_img").on("mouseover", function (e) {
 
                     // 1. 在 .the_block 這個元素上，加上 animate__bounce 這個 class(同時也會自動加上 animate__animated 這個 class)。
                     // 2. 效果執行完後，會自動移除 animate__animated 和 animate__bounce 這兩個 class。
                     // animateCSS('.player_1', 'pulse');
-                    animateCSS('.player_photo', 'pulse');
+
+                    animateCSS(e.target, 'pulse');
                 });
 
             })

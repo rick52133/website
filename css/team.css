@@ -241,6 +241,9 @@ li:nth-child(2n) a:hover + .team_name h2{
         left: 15%;
         transform: translateY(-50%) translateX(-15%);
     }
+    .teams_title{
+        background-attachment: scroll;
+    }
 
 }
 @media screen and (max-width:768px){
@@ -258,6 +261,20 @@ li:nth-child(2n) a:hover + .team_name h2{
     li:nth-child(2n) a:hover + .team_name h2{
   
         transform: translateX(-10px) translateY(-30px);
+    }
+}
+@media screen and (max-width:499px){
+    main .left_a:hover::before{
+        opacity: 0;
+    }
+    main .right_a:hover::before{
+        opacity: 0;
+    }
+    .left_explore{
+        display: none;
+    }
+    .right_explore{
+        display: none;
     }
 }
 

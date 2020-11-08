@@ -285,12 +285,17 @@
         <div class="nav_mob_inner"><a href="./index.html">HOME</a></div>
         <div class="nav_mob_inner"><a href="./news.html">NEWS</a></div>
         <div class="nav_mob_inner"><a href="./scores.html">SCORES</a></div>
-        <div class="nav_mob_inner"><a href="./team.html">TEAMS</a></div>
+        <div class="nav_mob_inner"><a href="./team.html" style="color: #e51937;">TEAMS</a></div>
         <div class="nav_mob_inner"><a href="./video.html">VIDEOS</a></div>
     </div>
 
     <div class="playerItr_title">
-        <div class="path"><span class="path_text">HOME > TRIPLETS > JOE JOHNSON</span></div>
+        <div class="path"><span class="path_text"><a href="./index.html">Home</a> > <a href="./team.html">Teams</a> > <a
+                    href="./teamItr.html">TeamItr</a> >
+                Player</span></div>
+        <div class="path_hid"><span class="path_text"><a href="./index.html">Home</a> > <a href="./team.html">Teams</a>
+                </br>> <a href="./teamItr.html">TeamItr</a> >
+                Player</span></div>
         <div class="title_player_box">
             <span class="firstname">JOE</span>
             <span class="lastname">JOHNSON</span>
@@ -475,7 +480,7 @@
                 // duration: '50%' //單位是px or %  動畫執行的範圍
 
 
-            }).addIndicators().on('enter', function () {
+            }).on('enter', function () {
                 $('.pic_itr1 .pic_itr_label').css('visibility', 'visible')
                 $('.pic_itr1 .left_itr .pic_itr_img').animate({
                     top: 0
@@ -503,7 +508,7 @@
                 // duration: '50%' //單位是px or %  動畫執行的範圍
 
 
-            }).addIndicators().on('enter', function () {
+            }).on('enter', function () {
                 $('.pic_itr2 .pic_itr_label').css('visibility', 'visible')
                 $('.pic_itr2 .left_itr .pic_itr_img').animate({
                     top: 0
@@ -531,7 +536,7 @@
                 // duration: '50%' //單位是px or %  動畫執行的範圍
 
 
-            }).addIndicators().on('enter', function () {
+            }).on('enter', function () {
                 $('.pic_itr3 .pic_itr_label').css('visibility', 'visible')
                 $('.pic_itr3 .left_itr .pic_itr_img').animate({
 
@@ -560,26 +565,3 @@
 </body>
 
 </html>
-
-<!-- <div class="stat_header">
-                <div class="chart_body"><span>Leage Stat</span></div>
-                <div class="chart_label">
-                    <div class="label_box">
-                        <div class="idicator"></div>
-                        <span>Player</span>
-                    </div>
-                    <div class="label_box">
-                        <div class="idicator"></div>
-                        <span>League</span>
-                    </div>
-                </div>
-            </div>
-            <div class="stat_container">
-                <div class="stat_box">
-                    <div class="chart_body">
-                        <div class="bar"><span>17.2</span></div>
-                        <div class="bar"><span>10.2</span></div>
-                    </div>
-                    <div class="chart_label"><span>PPG</span></div>
-                </div>
-            </div> -->

@@ -45,7 +45,7 @@ $(function () {            //頁面寬度改變，重設賽式表距離
                 })
                 $(this).attr('disabled', true)
             } else if (right_margin < 150) {
-                console.log('right', right_margin)
+
                 $('.item').css({
                     right: '+=150px'
                 })
@@ -69,13 +69,18 @@ $(function () {            //頁面寬度改變，重設賽式表距離
             setTimeout(function () {
                 isClick = true;
             }, 500);//0.5秒内不能重複點擊
-
+            console.log(left_margin)
             if (left_margin < -150 && left_margin > -151) {
                 $('.item').css({
                     right: '-=150px'
                 })
                 $(this).attr('disabled', true)
-                return
+                // return
+            } else if (left_margin == -150) {
+                $('.item').css({
+                    right: '-=150px'
+                })
+                $(this).attr('disabled', true)
             }
             else if (left_margin < 0) {
                 $('.item').css({

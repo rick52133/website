@@ -28,10 +28,20 @@ body{
     position: absolute;
     top: 20px;
 }
+.path_hid{
+    display: none;
+}
 .path_text{
     font-size: 16px;
     display: block;
     color: rgb(175, 175, 175);
+}
+.path_text a{
+    color: white;
+    text-decoration: none;
+}
+.path_text a:hover{
+    color: #e51937;
 }
 .title_player_box{
     width: 100%;
@@ -69,12 +79,20 @@ body{
     .firstname,.lastname{
         font-size: 70px;
     }
+    .path{
+        padding-left: 30px;
+    }
 }
+
 @media screen and (max-width:768px){
     .playerItr_title{
         background-position: right 35% center; 
         height: 600px;
         align-items: flex-end;
+    }
+    .path{
+        
+        width: 228px;
     }
     .firstname,.lastname{
         line-height: 70px;
@@ -97,12 +115,24 @@ body{
     .title_player_box span:nth-child(3){
         font-size: 25px;
     }
+    .path{
+        padding-left: 10px; 
+        top: 10px;
+    }
+    .path_text{
+        font-size: 12px;
+    }
     .firstname,.lastname{
         font-size: 40px;
         line-height: 40px;
     }
     .title_logo{
         width: 40px;
+    }
+}
+@media screen and (max-width:499px){
+    .path{
+        width: 170px;
     }
 }
 @media screen and (max-width:400px){
@@ -119,6 +149,19 @@ body{
     }
     .title_player_box span:nth-child(3){
         font-size: 20px;
+    }
+}
+@media screen and (max-width:385px){
+    .path{
+        display: none;
+    }
+    .path_hid{
+        display: block;
+        width: 100%;
+        align-self: flex-start;
+        padding-left: 10px;
+        position: absolute;
+        top: 10px;
     }
 }
 

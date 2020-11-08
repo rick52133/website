@@ -35,7 +35,6 @@ video{
     }
 }
 .home_news{
-    /* border: 1px solid rebeccapurple; */
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -152,7 +151,6 @@ video{
     /* min-height: 100%; */
 }
 .bot{
-    /* border: 1px solid blue; */
     position: absolute;
     width: 65%;
     right: 0;
@@ -239,10 +237,11 @@ video{
     z-index: 2;
 }
 .hover_block span{
-    color: red;
+    color: white;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
 }
 .star_player_inner:hover .hover_block{
     display: flex;
@@ -258,7 +257,6 @@ video{
 
 /* 數據 */
 .stat{
-    /* border: 1px solid green; */
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -267,7 +265,6 @@ video{
     font-size: 0;
 }
 .stat_top{
-    /* border: 1px solid rebeccapurple; */
     width: 100%;
 }
 .stat_title{
@@ -290,13 +287,11 @@ video{
     }
 }
 .stat_line{
-    /* border: 1px solid black; */
     height: 5px;
     background-color: black;
     margin-top: 7px;
 }
 .stat_bot{
-    /* border: 1px solid gold; */
     width: 100%;
     display: flex;
     
@@ -357,24 +352,21 @@ video{
     width: 100%;
     z-index: 2;
     position: relative;
-    /* #e51937 */
 }
-/* .player_photo_img:hover + span{
-    background-color: #e51937;
-} */
+
 .player_photo .teamlogo{
     position: absolute;
     width: 30%;
     bottom: -10%;
     right: -10%;
+    /* z-index: 2; */
 }
 .player_photo .teamlogo img{
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .player_1,.player_2,.player_3{
-    /* border: 1px solid brown; */
     display: flex;
     justify-content: space-between;
     padding: 7px 0;
@@ -388,11 +380,9 @@ video{
 }
 .player .num{
     width: 40px;
-    /* border: 1px solid slateblue; */
     text-align: center;
 }
 .player .name{
-    /* border: 1px solid black; */
     text-align: start;
     width: 200px;
 }
@@ -410,13 +400,11 @@ video{
     width: 100%;
     background-image: url(../picture/What-We-Do-BG.png);
     background-size: cover;
-    /* border: 1px solid black; */
     overflow: hidden;
 }
 .about{
     width: 80%;
     padding: 30px 0;
-    /* border: 1px solid black; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -426,7 +414,6 @@ video{
 .img2,.img1{
     width: 60%;
     overflow: hidden;
-    /* border: 1px solid red; */
 }
 .img2 img,.img1 img{
     width: 100%;
@@ -436,7 +423,6 @@ video{
     padding-top: 30px;
 }
 .about_inner{
-   /* border: 1px solid blue; */
    position: absolute;
    width: 60%;
    padding: 20px;

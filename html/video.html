@@ -907,6 +907,8 @@
     </div>
 
     <script src="../jquery/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script> -->
+    <script src="../js/dreamerslab-jquery.preload-5c8025e/jquery.preload.js"></script>
     <script>
         $(function () {
             // hamburger icon 的切換
@@ -1025,6 +1027,22 @@
         })
 
         $(document).ready(function () {
+
+            $.preload(
+                console.log("aaa"),
+                '../picture/videos/hover/nate.gif',
+                '../picture/videos/hover/allen.gif',
+                '../picture/videos/hover/amare.gif',
+                '../picture/videos/hover/big3.gif',
+                '../picture/videos/hover/chris.gif',
+                '../picture/videos/hover/crazy.gif',
+                '../picture/videos/hover/harden.gif',
+                '../picture/videos/hover/joe.gif',
+                '../picture/videos/hover/salt.gif',
+                '../picture/videos/hover/zack.gif',
+            );
+
+
             $('.tab_but').eq(0).addClass('active')
 
             //$('.tab_but').eq(0).attr('title') 取得第一個TAB的TITLE
