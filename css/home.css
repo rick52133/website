@@ -211,7 +211,7 @@ video{
 }
 @media screen and (max-width:992px){
     .img_hidden_box{
-        width: 45%;
+        width: 49%;
     }
 }
 @media screen and (max-width:576px){
@@ -229,23 +229,67 @@ video{
     position: absolute;
     width: 100%;
     height: 100%;
+    padding: 0 30px;
     background-color: #BEBEBE;
     background:rgba(0,0,0,0.6);
-    display: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 2;
+    top: 100%;
+    transition: 0.5s;
 }
-.hover_block span{
+.star_player_inner:hover .hover_block{
+    top: 0;
+}
+.hover_block > span{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
     font-weight: bold;
     text-align: center;
     font-family: 'Abril Fatface', cursive;
 }
-.star_player_inner:hover .hover_block{
-    display: flex;
+.hover_stat{
+    font-size: 16px;
+    list-style: none;
+    line-height: 1.1;
+    color: white;
+    padding: 0;
+    padding-top: 10px;
+    width: 100%;
 }
+.hover_stat li{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #4F4F4F;
+}
+.hover_stat li span:first-child{
+    opacity: 0.5;
+}
+.hover_link{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+.hover_link a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    opacity: 0.7;
+}
+.hover_link a:hover{
+    border-bottom: 3px solid red ;
+    opacity: 1;
+}
+
 .star_player_inner img{
     width: 100%;
     transform: scale(1,1);
@@ -254,6 +298,75 @@ video{
 .star_player_inner:hover img{
     transform: scale(1.2,1.2);
 }
+
+.top_but{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    text-align:center;
+    color:white;
+    font-size: 25px;
+    width: 25px;
+	padding-top:25px;
+	display:none;
+	border-color:white;
+    transition:all .3s ease-out;
+    cursor: pointer;
+}
+.top_but:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .1em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.2em;
+	border-color:inherit;
+}
+.top_but_down::before{
+    content:'▼';
+    line-height:1.4em;
+}
+@media screen and (max-width:1200px) and (min-width:993px){
+    .hover_block > span{
+        line-height: 30px;
+    }
+}
+@media screen and (max-width:576px){
+    .star_player_inner:hover .hover_block{
+        top: 100%;
+    }
+    .star_player_inner:hover img{
+        transform: scale(1,1);
+    }
+    .top_but{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:400px){
+    .hover_block{
+        padding: 0 20px;
+    }
+    .top_but{
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+@media screen and (max-width:359px){
+    .hover_block > span{
+        line-height: 30px;
+    }
+    .top_but{
+        transform: translateX(-350%) translateY(-50%);
+    }
+    
+}
+
 
 /* 數據 */
 .stat{
@@ -392,6 +505,62 @@ video{
     color: red;
 }
 
+/* 2020資訊 */
+.inf_box{
+    width: 100%;
+    height: 430px;
+    margin-top: 40px;
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../picture/home/divider_tunnel.jpg);
+}
+.inf{
+    z-index: 2;
+    width: 70%;
+}
+.inf h2,.inf p{
+    color: white;
+    text-align: center;
+}
+.inf h2{
+    font-size: 35px;
+    font-family: 'Abril Fatface', cursive;;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.inf p{
+    font-size: 20px;
+    line-height: 27px;
+}
+.inf_box .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    
+}
+@media screen and (max-width:576px){
+    .inf_box{
+        background-attachment: scroll;
+    }
+    .inf h2{
+        font-size: 30px;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+    }
+    .inf p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 
 /* 關於我們 */
 .about_outer{
@@ -432,7 +601,7 @@ video{
    z-index: 3;
    transform: translateX(-50%) translateY(-50%);
 }
-.about_inner h1{
+.about_inner h2{
     font-family: 'Abril Fatface', cursive;
     font-size: 50px;
     text-align: center;
@@ -447,7 +616,7 @@ video{
     .img2,.img1{
         width: 85%;
     }
-    .about_inner h1{
+    .about_inner h2{
         font-size: 40px;
     }
     .about_inner p{
@@ -479,10 +648,26 @@ video{
     .about_inner p{
         line-height: 30px;
     }
-    .about_inner h1{
+    .about_inner h2{
         line-height: 39px;
+        padding-bottom: 5px;
+    }
+    .img2 img,.img1 img{
+        min-height: 214px;
+        object-fit: cover;
     }
 
+}
+@media screen and (max-width:400px){
+    .about_inner h2{
+        font-size: 35px;
+    }
+    .about_inner p{
+        line-height: 24px;
+    }
+    .about{
+        padding: 0px;
+    }
 }
 
 
