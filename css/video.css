@@ -340,7 +340,7 @@ iframe {
         transform: translateX(-100%);
         position: fixed;
         top: 0;
-        z-index: 5;
+        z-index: 10;
         height: 100vh;
         transition: 1s all;
         overflow-y: auto;

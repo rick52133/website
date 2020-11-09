@@ -418,14 +418,14 @@ main{
     width: 100%;
     left: 16%;
     position: absolute;
-    top: 57.5px;
+    top: 58.5px;
     clip-path: polygon(0 0,100% 0,73% 100%,0 100%);
 }
 
 .pic_itr1 .right_itr .pic_itr_img{
     width: 100%;
     right: 16%;
-    bottom: 57.5px;
+    bottom: 59px;
     position: absolute;
     clip-path: polygon(27% 0,100% 0,100% 100%,0 100%);
 }
@@ -563,6 +563,11 @@ main{
     }
     .pic_itr1 .right_itr .pic_itr_img,.pic_itr2 .right_itr .pic_itr_img,.pic_itr3 .left_itr .pic_itr_img{
         bottom: 27.5px;
+    }
+}
+@media screen and (max-width:476px){
+    .pic_itr_label{
+        font-size: 18px;
     }
 }
 

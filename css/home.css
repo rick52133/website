@@ -122,9 +122,10 @@ video{
     }
     .top_title h3{
         padding-top: 20px;
+        line-height: 34px;
     }
     .top_title p{
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width:576px){
@@ -306,14 +307,15 @@ video{
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
     text-align:center;
-    color:white;
+    color:#dfdfdf;
     font-size: 25px;
     width: 25px;
 	padding-top:25px;
 	display:none;
-	border-color:white;
+	border-color:#dfdfdf;
     transition:all .3s ease-out;
     cursor: pointer;
+    opacity: 0.6;
 }
 .top_but:before{
 	content:'▲';
@@ -322,7 +324,7 @@ video{
 	top:0;
 	left:50%;
 	margin-left:-.7em;
-	border:solid .1em white;
+	border:solid .1em #dfdfdf;
 	border-radius:10em;
 	width:1.4em;
 	height:1.4em;
@@ -397,6 +399,13 @@ video{
     }
     .stat_title span{
         padding-left: 0;
+
+    }
+}
+@media screen and (max-width:576px){
+    .stat_title span{
+        font-size: 30px;
+        
     }
 }
 .stat_line{
@@ -477,6 +486,7 @@ video{
 .player_photo .teamlogo img{
     width: 100%;
     z-index: 3;
+    transform: translateZ(100px);
 }
 
 .player_1,.player_2,.player_3{
